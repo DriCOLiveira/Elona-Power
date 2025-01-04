@@ -1,0 +1,2741 @@
+[gd_scene load_steps=60 format=3 uid="uid://cjh310eae401t"]
+
+[ext_resource type="Script" path="res://nodes/world/main_game.gd" id="1_0orqj"]
+[ext_resource type="Texture2D" uid="uid://rec5pnqjadek" path="res://graphic/interface_2.bmp" id="2_2hi7o"]
+[ext_resource type="AudioStream" uid="uid://h62fyuo61scd" path="res://audio/bg_town.tres" id="2_05uvf"]
+[ext_resource type="Texture2D" uid="uid://w7fuh7jgb71j" path="res://graphic/Interface/bars/under.png" id="2_5028k"]
+[ext_resource type="AudioStream" uid="uid://chc77ytchhp4g" path="res://audio/foot1a.tres" id="2_pbmvr"]
+[ext_resource type="Texture2D" uid="uid://nsw7x007wo0c" path="res://graphic/interface_sidebutton.png" id="3_42pr3"]
+[ext_resource type="Texture2D" uid="uid://dxy7tw6rdh62o" path="res://graphic/Interface/bars/over.png" id="3_t7tpt"]
+[ext_resource type="Texture2D" uid="uid://dvvy3t655mihs" path="res://graphic/Interface/bars/icon.png" id="4_tsj2c"]
+[ext_resource type="Texture2D" uid="uid://c1gvcvm06fhja" path="res://graphic/interface_1.png" id="4_tvi1f"]
+[ext_resource type="Texture2D" uid="uid://c5qjxvvp1s51s" path="res://graphic/Interface/StatsThing/maplabel.png" id="5_n2pt2"]
+[ext_resource type="Texture2D" uid="uid://br8pyu33nxand" path="res://graphic/Interface/clock.png" id="5_tea25"]
+[ext_resource type="Texture2D" uid="uid://d07y6sdx2g825" path="res://graphic/Interface/StatsThing/cha.png" id="6_gqcof"]
+[ext_resource type="Texture2D" uid="uid://dpeyompql8ip3" path="res://graphic/Interface/StatsThing/str.png" id="6_jj26i"]
+[ext_resource type="Texture2D" uid="uid://dev2yfpugrqfj" path="res://graphic/Interface/date.png" id="6_kd4us"]
+[ext_resource type="Texture2D" uid="uid://cr4kfncdfvox6" path="res://graphic/Interface/orb_green.png" id="6_wljsu"]
+[ext_resource type="Texture2D" uid="uid://dtwcur0wu644c" path="res://graphic/Interface/bbox.png" id="6_xp88d"]
+[ext_resource type="Texture2D" uid="uid://i4qbswxv730i" path="res://graphic/Interface/StatsThing/dex.png" id="6_ybfw5"]
+[ext_resource type="Texture2D" uid="uid://bbn0t2dy7o245" path="res://graphic/Interface/StatsThing/spd.png" id="6_yfyue"]
+[ext_resource type="Texture2D" uid="uid://c4vfs357hd2" path="res://graphic/Interface/bboxc.png" id="7_342oc"]
+[ext_resource type="Texture2D" uid="uid://cfo5wvw4r22sv" path="res://graphic/Interface/orb_blue.png" id="7_ay655"]
+[ext_resource type="Texture2D" uid="uid://1pxbybdixl5k" path="res://graphic/Interface/StatsThing/aaa.png" id="7_br1wx"]
+[ext_resource type="Texture2D" uid="uid://c8i4bgxasjrgl" path="res://graphic/Interface/StatsThing/consti.png" id="7_ijprc"]
+[ext_resource type="Texture2D" uid="uid://ceeilprvi4a0p" path="res://graphic/Interface/StatsThing/per.png" id="7_r2rip"]
+[ext_resource type="FontFile" uid="uid://bbwe76sp3lqcn" path="res://GNU Unifont.ttf" id="7_ri6w6"]
+[ext_resource type="Texture2D" uid="uid://b7ub16crg5be1" path="res://graphic/Interface/Dicons/inv.png" id="8_e7uq3"]
+[ext_resource type="Texture2D" uid="uid://ccj1crevyvh85" path="res://graphic/Interface/StatsThing/ler.png" id="8_qolkt"]
+[ext_resource type="Texture2D" uid="uid://bydwvidw87cvy" path="res://graphic/Interface/clockhand.png" id="8_rfdgw"]
+[ext_resource type="Texture2D" uid="uid://c5v1v11jyhp4o" path="res://graphic/Interface/StatsThing/wil.png" id="9_d563l"]
+[ext_resource type="Texture2D" uid="uid://barhrjl0sbxpt" path="res://graphic/Interface/StatsThing/mag.png" id="10_2xes2"]
+[ext_resource type="Texture2D" uid="uid://cu0lrvvy6stbf" path="res://graphic/Interface/Smolicons/diamond.png" id="10_o2bon"]
+[ext_resource type="Texture2D" uid="uid://seh35kwpnkv" path="res://graphic/Interface/Dicons/eat.png" id="13_jjx5d"]
+[ext_resource type="Texture2D" uid="uid://c0bykretaeen4" path="res://graphic/Interface/bars/coin.png" id="16_o3sml"]
+[ext_resource type="Texture2D" uid="uid://1eed1r5sshx2" path="res://graphic/Interface/bars/in.png" id="18_j3lmw"]
+[ext_resource type="Texture2D" uid="uid://d4gxoc7lo8vx5" path="res://graphic/Interface/bars/coin gold.png" id="20_wsr0e"]
+[ext_resource type="Texture2D" uid="uid://cjqgr8u7ft45n" path="res://graphic/Interface/bars/coin plat.png" id="21_d5xuw"]
+[ext_resource type="Texture2D" uid="uid://cou6dgsbddyvh" path="res://graphic/Interface/buff/leftbuff.png" id="34_gk7ua"]
+[ext_resource type="FontFile" uid="uid://cafw45monkcic" path="res://Courier.ttf" id="34_spxpl"]
+[ext_resource type="Texture2D" uid="uid://c08lrpw0s8807" path="res://graphic/NPC/portraits/m1.png" id="35_t34s7"]
+[ext_resource type="Texture2D" uid="uid://dvtlf17uxx5l1" path="res://graphic/Interface/Dicons/wear.png" id="36_afwvs"]
+[ext_resource type="Texture2D" uid="uid://pxnmy1ssr2o5" path="res://graphic/Interface/Dicons/use.png" id="36_fh0vh"]
+[ext_resource type="Texture2D" uid="uid://dqcmiojdhgccc" path="res://graphic/Items/Consumables/meat.png" id="37_dkc76"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_vcv3r"]
+texture = ExtResource("4_tvi1f")
+axis_stretch_horizontal = 2
+axis_stretch_vertical = 2
+region_rect = Rect2(16, 16, 232, 160)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_gwi5o"]
+texture = ExtResource("2_2hi7o")
+axis_stretch_horizontal = 2
+axis_stretch_vertical = 2
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_yuy6h"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_fha8u"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_em2ny"]
+content_margin_left = 16.0
+content_margin_top = 16.0
+content_margin_right = 16.0
+content_margin_bottom = 16.0
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_86c6y"]
+texture = ExtResource("4_tvi1f")
+axis_stretch_horizontal = 2
+axis_stretch_vertical = 2
+region_rect = Rect2(16, 16, 232, 152)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_bmyca"]
+bg_color = Color(0.615686, 0.52549, 0.388235, 1)
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(0, 0, 0, 1)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_npmj1"]
+size = Vector2(64, 12)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_hx68y"]
+size = Vector2(236, 16)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_mtcgn"]
+content_margin_left = 4.0
+content_margin_top = 4.0
+texture = ExtResource("34_gk7ua")
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_chinn"]
+size = Vector2(22, 22)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_bhmmd"]
+size = Vector2(22, 22)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_e1ce5"]
+size = Vector2(22, 22)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_f2o0v"]
+size = Vector2(22, 22)
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_74p1y"]
+radius = 25.0
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_81m0v"]
+radius = 20.0
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_15b5i"]
+radius = 12.0
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_jp4wq"]
+bg_color = Color(0.985473, 0.917269, 0.879806, 0.784314)
+corner_radius_top_left = 12
+corner_radius_top_right = 12
+corner_radius_bottom_right = 12
+corner_radius_bottom_left = 12
+anti_aliasing = false
+
+[node name="MainGame" type="Node2D"]
+script = ExtResource("1_0orqj")
+
+[node name="audio_bg" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("2_05uvf")
+
+[node name="audio_sfx" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("2_pbmvr")
+
+[node name="cl" type="CanvasLayer" parent="."]
+
+[node name="Control" type="Control" parent="cl"]
+z_index = 99
+layout_mode = 3
+anchors_preset = 0
+offset_right = 768.0
+offset_bottom = 576.0
+
+[node name="lowmenu" type="HBoxContainer" parent="cl/Control"]
+layout_mode = 2
+offset_top = 480.0
+offset_right = 768.0
+offset_bottom = 576.0
+size_flags_vertical = 3
+size_flags_stretch_ratio = 5.0
+theme_override_constants/separation = 0
+
+[node name="leftpan" type="Panel" parent="cl/Control/lowmenu"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_styles/panel = SubResource("StyleBoxTexture_vcv3r")
+
+[node name="con" type="VBoxContainer" parent="cl/Control/lowmenu"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 6.0
+theme_override_constants/separation = 0
+
+[node name="console_shrunk" type="Panel" parent="cl/Control/lowmenu/con"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+size_flags_stretch_ratio = 5.0
+theme_override_styles/panel = SubResource("StyleBoxTexture_gwi5o")
+
+[node name="txt" type="TextEdit" parent="cl/Control/lowmenu/con/console_shrunk"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_placeholder_color = Color(1, 1, 1, 1)
+theme_override_colors/font_readonly_color = Color(1, 1, 1, 1)
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/selection_color = Color(1, 1, 1, 1)
+theme_override_colors/font_selected_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("7_ri6w6")
+theme_override_font_sizes/font_size = 16
+theme_override_styles/normal = SubResource("StyleBoxEmpty_yuy6h")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_fha8u")
+theme_override_styles/read_only = SubResource("StyleBoxEmpty_em2ny")
+placeholder_text = " "
+editable = false
+context_menu_enabled = false
+shortcut_keys_enabled = false
+selecting_enabled = false
+deselect_on_focus_loss_enabled = false
+drag_and_drop_selection_enabled = false
+virtual_keyboard_enabled = false
+middle_mouse_paste_enabled = false
+wrap_mode = 1
+
+[node name="lowbar" type="Panel" parent="cl/Control/lowmenu/con"]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_styles/panel = SubResource("StyleBoxTexture_86c6y")
+
+[node name="maplabel" type="TextureRect" parent="cl/Control/lowmenu/con/lowbar"]
+layout_mode = 0
+offset_left = 16.0
+offset_right = 32.0
+offset_bottom = 16.0
+texture = ExtResource("5_n2pt2")
+
+[node name="Label" type="Label" parent="cl/Control/lowmenu/con/lowbar/maplabel"]
+layout_mode = 0
+offset_left = 20.0
+offset_top = -1.0
+offset_right = 68.0
+offset_bottom = 15.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("7_ri6w6")
+text = "Vernis"
+
+[node name="str" type="TextureRect" parent="cl/Control/lowmenu/con/lowbar"]
+layout_mode = 0
+offset_left = 139.0
+offset_right = 155.0
+offset_bottom = 16.0
+texture = ExtResource("6_jj26i")
+
+[node name="Label" type="Label" parent="cl/Control/lowmenu/con/lowbar/str"]
+layout_mode = 0
+offset_left = 20.0
+offset_top = -1.0
+offset_right = 44.0
+offset_bottom = 15.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("7_ri6w6")
+text = "21"
+
+[node name="con" type="TextureRect" parent="cl/Control/lowmenu/con/lowbar"]
+layout_mode = 0
+offset_left = 191.0
+offset_right = 207.0
+offset_bottom = 16.0
+texture = ExtResource("7_ijprc")
+
+[node name="Label" type="Label" parent="cl/Control/lowmenu/con/lowbar/con"]
+layout_mode = 0
+offset_left = 20.0
+offset_top = -1.0
+offset_right = 44.0
+offset_bottom = 15.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("7_ri6w6")
+text = "21"
+
+[node name="dex" type="TextureRect" parent="cl/Control/lowmenu/con/lowbar"]
+layout_mode = 0
+offset_left = 239.0
+offset_right = 255.0
+offset_bottom = 16.0
+texture = ExtResource("6_ybfw5")
+
+[node name="Label" type="Label" parent="cl/Control/lowmenu/con/lowbar/dex"]
+layout_mode = 0
+offset_left = 20.0
+offset_top = -1.0
+offset_right = 44.0
+offset_bottom = 15.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("7_ri6w6")
+text = "21"
+
+[node name="per" type="TextureRect" parent="cl/Control/lowmenu/con/lowbar"]
+layout_mode = 0
+offset_left = 287.0
+offset_right = 303.0
+offset_bottom = 16.0
+texture = ExtResource("7_r2rip")
+
+[node name="Label" type="Label" parent="cl/Control/lowmenu/con/lowbar/per"]
+layout_mode = 0
+offset_left = 20.0
+offset_top = -1.0
+offset_right = 44.0
+offset_bottom = 15.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("7_ri6w6")
+text = "21"
+
+[node name="ler" type="TextureRect" parent="cl/Control/lowmenu/con/lowbar"]
+layout_mode = 0
+offset_left = 331.0
+offset_right = 347.0
+offset_bottom = 16.0
+texture = ExtResource("8_qolkt")
+
+[node name="Label" type="Label" parent="cl/Control/lowmenu/con/lowbar/ler"]
+layout_mode = 0
+offset_left = 20.0
+offset_top = -1.0
+offset_right = 44.0
+offset_bottom = 15.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("7_ri6w6")
+text = "21"
+
+[node name="wil" type="TextureRect" parent="cl/Control/lowmenu/con/lowbar"]
+layout_mode = 0
+offset_left = 379.0
+offset_right = 395.0
+offset_bottom = 16.0
+texture = ExtResource("9_d563l")
+
+[node name="Label" type="Label" parent="cl/Control/lowmenu/con/lowbar/wil"]
+layout_mode = 0
+offset_left = 20.0
+offset_top = -1.0
+offset_right = 44.0
+offset_bottom = 15.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("7_ri6w6")
+text = "21"
+
+[node name="mag" type="TextureRect" parent="cl/Control/lowmenu/con/lowbar"]
+layout_mode = 0
+offset_left = 427.0
+offset_right = 443.0
+offset_bottom = 16.0
+texture = ExtResource("10_2xes2")
+
+[node name="Label" type="Label" parent="cl/Control/lowmenu/con/lowbar/mag"]
+layout_mode = 0
+offset_left = 20.0
+offset_top = -1.0
+offset_right = 44.0
+offset_bottom = 15.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("7_ri6w6")
+text = "21"
+
+[node name="chr" type="TextureRect" parent="cl/Control/lowmenu/con/lowbar"]
+layout_mode = 0
+offset_left = 475.0
+offset_right = 491.0
+offset_bottom = 16.0
+texture = ExtResource("6_gqcof")
+
+[node name="Label" type="Label" parent="cl/Control/lowmenu/con/lowbar/chr"]
+layout_mode = 0
+offset_left = 20.0
+offset_top = -1.0
+offset_right = 44.0
+offset_bottom = 15.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("7_ri6w6")
+text = "21"
+
+[node name="spd" type="TextureRect" parent="cl/Control/lowmenu/con/lowbar"]
+layout_mode = 0
+offset_left = 523.0
+offset_right = 539.0
+offset_bottom = 16.0
+texture = ExtResource("6_yfyue")
+
+[node name="Label" type="Label" parent="cl/Control/lowmenu/con/lowbar/spd"]
+layout_mode = 0
+offset_left = 20.0
+offset_top = -1.0
+offset_right = 68.0
+offset_bottom = 15.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("7_ri6w6")
+text = "???"
+
+[node name="pvdv" type="TextureRect" parent="cl/Control/lowmenu/con/lowbar"]
+layout_mode = 0
+offset_left = 591.0
+offset_right = 607.0
+offset_bottom = 16.0
+texture = ExtResource("7_br1wx")
+
+[node name="Label" type="Label" parent="cl/Control/lowmenu/con/lowbar/pvdv"]
+layout_mode = 0
+offset_left = 20.0
+offset_top = -1.0
+offset_right = 68.0
+offset_bottom = 15.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("7_ri6w6")
+text = "??/??"
+
+[node name="uplowmenu" type="Control" parent="cl/Control"]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="exp" type="Label" parent="cl/Control/uplowmenu"]
+layout_mode = 0
+offset_left = 24.0
+offset_top = 463.0
+offset_right = 168.0
+offset_bottom = 480.0
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 2
+theme_override_constants/shadow_outline_size = 2
+theme_override_fonts/font = ExtResource("7_ri6w6")
+text = "Lv999/999999999999"
+
+[node name="TextureRect" type="TextureRect" parent="cl/Control/uplowmenu/exp"]
+layout_mode = 0
+offset_left = -24.0
+offset_top = -4.0
+offset_bottom = 20.0
+texture = ExtResource("16_o3sml")
+
+[node name="life" type="TextureProgressBar" parent="cl/Control/uplowmenu"]
+layout_mode = 0
+offset_left = 210.0
+offset_top = 468.0
+offset_right = 300.0
+offset_bottom = 480.0
+value = 100.0
+rounded = true
+stretch_margin_bottom = 9
+texture_under = ExtResource("2_5028k")
+texture_over = ExtResource("3_t7tpt")
+texture_progress = ExtResource("18_j3lmw")
+texture_progress_offset = Vector2(0, 1)
+tint_progress = Color(0.5, 0.165, 0.165, 1)
+
+[node name="TextureRect" type="TextureRect" parent="cl/Control/uplowmenu/life"]
+layout_mode = 0
+offset_left = -12.0
+offset_top = -3.0
+offset_right = 4.0
+offset_bottom = 13.0
+texture = ExtResource("4_tsj2c")
+
+[node name="ints" type="Label" parent="cl/Control/uplowmenu/life"]
+layout_mode = 0
+offset_left = 8.0
+offset_top = -15.0
+offset_right = 90.0
+offset_bottom = 1.0
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 2
+theme_override_fonts/font = ExtResource("7_ri6w6")
+theme_override_font_sizes/font_size = 16
+text = "71(71)"
+
+[node name="perc" type="Label" parent="cl/Control/uplowmenu/life"]
+layout_mode = 0
+offset_left = 90.0
+offset_top = -4.0
+offset_right = 138.0
+offset_bottom = 12.0
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 2
+theme_override_constants/shadow_outline_size = 0
+theme_override_fonts/font = ExtResource("7_ri6w6")
+text = "100%"
+
+[node name="mana" type="TextureProgressBar" parent="cl/Control/uplowmenu"]
+layout_mode = 0
+offset_left = 358.0
+offset_top = 468.0
+offset_right = 448.0
+offset_bottom = 480.0
+value = 100.0
+rounded = true
+stretch_margin_bottom = 9
+texture_under = ExtResource("2_5028k")
+texture_over = ExtResource("3_t7tpt")
+texture_progress = ExtResource("18_j3lmw")
+texture_progress_offset = Vector2(0, 1)
+tint_progress = Color(0.25, 0.3125, 0.5, 1)
+
+[node name="TextureRect" type="TextureRect" parent="cl/Control/uplowmenu/mana"]
+layout_mode = 0
+offset_left = -12.0
+offset_top = -3.0
+offset_right = 4.0
+offset_bottom = 13.0
+texture = ExtResource("4_tsj2c")
+
+[node name="ints" type="Label" parent="cl/Control/uplowmenu/mana"]
+layout_mode = 0
+offset_left = 8.0
+offset_top = -15.0
+offset_right = 90.0
+offset_bottom = 1.0
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 2
+theme_override_fonts/font = ExtResource("7_ri6w6")
+theme_override_font_sizes/font_size = 16
+text = "71(71)"
+
+[node name="perc" type="Label" parent="cl/Control/uplowmenu/mana"]
+layout_mode = 0
+offset_left = 90.0
+offset_top = -4.0
+offset_right = 138.0
+offset_bottom = 12.0
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 2
+theme_override_constants/shadow_outline_size = 0
+theme_override_fonts/font = ExtResource("7_ri6w6")
+text = "100%"
+
+[node name="sp" type="Label" parent="cl/Control/uplowmenu"]
+layout_mode = 0
+offset_left = 494.0
+offset_top = 464.0
+offset_right = 590.0
+offset_bottom = 480.0
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 2
+theme_override_fonts/font = ExtResource("7_ri6w6")
+text = "Sp1111/1111"
+
+[node name="gold" type="Label" parent="cl/Control/uplowmenu"]
+layout_mode = 0
+offset_left = 614.0
+offset_top = 463.0
+offset_right = 678.0
+offset_bottom = 480.0
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 2
+theme_override_constants/shadow_outline_size = 2
+theme_override_fonts/font = ExtResource("7_ri6w6")
+text = "1000000"
+
+[node name="TextureRect" type="TextureRect" parent="cl/Control/uplowmenu/gold"]
+layout_mode = 0
+offset_left = -24.0
+offset_top = -4.0
+offset_bottom = 20.0
+texture = ExtResource("20_wsr0e")
+
+[node name="plat" type="Label" parent="cl/Control/uplowmenu"]
+layout_mode = 0
+offset_left = 702.0
+offset_top = 463.0
+offset_right = 750.0
+offset_bottom = 480.0
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 2
+theme_override_constants/shadow_outline_size = 2
+theme_override_fonts/font = ExtResource("7_ri6w6")
+text = "100 pp"
+
+[node name="TextureRect" type="TextureRect" parent="cl/Control/uplowmenu/plat"]
+layout_mode = 0
+offset_left = -24.0
+offset_top = -4.0
+offset_bottom = 20.0
+texture = ExtResource("21_d5xuw")
+
+[node name="timedate" type="Control" parent="cl/Control"]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="clock" type="TextureRect" parent="cl/Control/timedate"]
+layout_mode = 0
+offset_right = 120.0
+offset_bottom = 96.0
+texture = ExtResource("5_tea25")
+
+[node name="date" type="TextureRect" parent="cl/Control/timedate"]
+layout_mode = 0
+offset_left = 79.0
+offset_top = 9.0
+offset_right = 207.0
+offset_bottom = 32.0
+texture = ExtResource("6_kd4us")
+
+[node name="clockhand" type="TextureRect" parent="cl/Control/timedate"]
+layout_mode = 0
+offset_left = 58.0
+offset_top = 24.0
+offset_right = 67.0
+offset_bottom = 58.0
+pivot_offset = Vector2(4.5, 24.5)
+texture = ExtResource("8_rfdgw")
+
+[node name="datetex" type="Label" parent="cl/Control/timedate"]
+layout_mode = 0
+offset_left = 108.0
+offset_top = 15.0
+offset_right = 180.0
+offset_bottom = 31.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("7_ri6w6")
+theme_override_font_sizes/font_size = 16
+text = "517/11/77"
+horizontal_alignment = 1
+vertical_alignment = 2
+
+[node name="weathertime" type="Label" parent="cl/Control/timedate"]
+layout_mode = 0
+offset_left = 120.0
+offset_top = 35.0
+offset_right = 192.0
+offset_bottom = 51.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 2
+theme_override_fonts/font = ExtResource("7_ri6w6")
+theme_override_font_sizes/font_size = 16
+text = "Noon Hard Rain"
+vertical_alignment = 2
+
+[node name="togglemenus" type="Control" parent="cl/Control"]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Get" type="NinePatchRect" parent="cl/Control/togglemenus"]
+visible = false
+layout_mode = 0
+offset_left = 48.0
+offset_top = 96.0
+offset_right = 720.0
+offset_bottom = 432.0
+texture = ExtResource("4_tvi1f")
+patch_margin_left = 16
+patch_margin_top = 16
+patch_margin_right = 16
+patch_margin_bottom = 16
+
+[node name="Control" type="Control" parent="cl/Control/togglemenus/Get"]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="nameicon" type="TextureRect" parent="cl/Control/togglemenus/Get/Control"]
+layout_mode = 0
+offset_left = 67.0
+offset_top = 34.0
+offset_right = 87.0
+offset_bottom = 50.0
+texture = ExtResource("10_o2bon")
+
+[node name="Label" type="Label" parent="cl/Control/togglemenus/Get/Control/nameicon"]
+layout_mode = 0
+offset_left = 23.0
+offset_top = -1.0
+offset_right = 63.0
+offset_bottom = 15.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("7_ri6w6")
+text = "Name"
+vertical_alignment = 1
+
+[node name="HSeparator" type="HSeparator" parent="cl/Control/togglemenus/Get/Control/nameicon"]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = 10.0
+offset_top = -2.0
+offset_right = 58.0
+offset_bottom = 2.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_styles/separator = SubResource("StyleBoxFlat_bmyca")
+
+[node name="weighticon" type="TextureRect" parent="cl/Control/togglemenus/Get/Control"]
+layout_mode = 0
+offset_left = 516.0
+offset_top = 34.0
+offset_right = 536.0
+offset_bottom = 50.0
+texture = ExtResource("10_o2bon")
+
+[node name="Label" type="Label" parent="cl/Control/togglemenus/Get/Control/weighticon"]
+layout_mode = 0
+offset_left = 23.0
+offset_top = -1.0
+offset_right = 63.0
+offset_bottom = 15.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("7_ri6w6")
+text = "Weight"
+vertical_alignment = 1
+
+[node name="HSeparator" type="HSeparator" parent="cl/Control/togglemenus/Get/Control/weighticon"]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = 10.0
+offset_top = -2.0
+offset_right = 82.0
+offset_bottom = 2.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_styles/separator = SubResource("StyleBoxFlat_bmyca")
+
+[node name="Panel" type="NinePatchRect" parent="cl/Control/togglemenus/Get"]
+z_index = 1
+layout_mode = 0
+offset_left = 72.0
+offset_top = -18.0
+offset_right = 303.0
+offset_bottom = 18.0
+texture = ExtResource("6_xp88d")
+patch_margin_left = 4
+patch_margin_top = 4
+patch_margin_right = 4
+patch_margin_bottom = 4
+axis_stretch_horizontal = 2
+axis_stretch_vertical = 2
+
+[node name="NinePatchRect" type="NinePatchRect" parent="cl/Control/togglemenus/Get/Panel"]
+z_index = -1
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("7_342oc")
+axis_stretch_horizontal = 2
+axis_stretch_vertical = 2
+
+[node name="Label" type="Label" parent="cl/Control/togglemenus/Get/Panel"]
+layout_mode = 0
+offset_right = 231.0
+offset_bottom = 36.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("7_ri6w6")
+theme_override_font_sizes/font_size = 16
+text = "Pick Up"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="scroll" type="ScrollContainer" parent="cl/Control/togglemenus/Get"]
+custom_minimum_size = Vector2(576, 248)
+layout_mode = 0
+offset_left = 48.0
+offset_top = 60.0
+offset_right = 624.0
+offset_bottom = 308.0
+horizontal_scroll_mode = 0
+
+[node name="items" type="VBoxContainer" parent="cl/Control/togglemenus/Get/scroll"]
+custom_minimum_size = Vector2(576, 248)
+layout_mode = 2
+theme_override_constants/separation = 2
+
+[node name="HSeparator" type="HSeparator" parent="cl/Control/togglemenus/Get"]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -288.0
+offset_top = -28.0
+offset_right = 288.0
+offset_bottom = -24.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_styles/separator = SubResource("StyleBoxFlat_bmyca")
+
+[node name="CloseButton" type="Label" parent="cl/Control/togglemenus/Get"]
+layout_mode = 1
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -120.0
+offset_top = -29.0
+offset_right = -48.0
+offset_bottom = -6.0
+grow_horizontal = 0
+grow_vertical = 0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("7_ri6w6")
+theme_override_font_sizes/font_size = 16
+text = "[ Close ]"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="TouchScreenButton" type="TouchScreenButton" parent="cl/Control/togglemenus/Get/CloseButton"]
+position = Vector2(36, 12)
+shape = SubResource("RectangleShape2D_npmj1")
+action = "close"
+
+[node name="Drop" type="NinePatchRect" parent="cl/Control/togglemenus"]
+visible = false
+layout_mode = 0
+offset_left = 48.0
+offset_top = 96.0
+offset_right = 720.0
+offset_bottom = 432.0
+texture = ExtResource("4_tvi1f")
+patch_margin_left = 16
+patch_margin_top = 16
+patch_margin_right = 16
+patch_margin_bottom = 16
+
+[node name="Control" type="Control" parent="cl/Control/togglemenus/Drop"]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="nameicon" type="TextureRect" parent="cl/Control/togglemenus/Drop/Control"]
+layout_mode = 0
+offset_left = 67.0
+offset_top = 34.0
+offset_right = 87.0
+offset_bottom = 50.0
+texture = ExtResource("10_o2bon")
+
+[node name="Label" type="Label" parent="cl/Control/togglemenus/Drop/Control/nameicon"]
+layout_mode = 0
+offset_left = 23.0
+offset_top = -1.0
+offset_right = 63.0
+offset_bottom = 15.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("7_ri6w6")
+text = "Name"
+vertical_alignment = 1
+
+[node name="HSeparator" type="HSeparator" parent="cl/Control/togglemenus/Drop/Control/nameicon"]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = 10.0
+offset_top = -2.0
+offset_right = 58.0
+offset_bottom = 2.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_styles/separator = SubResource("StyleBoxFlat_bmyca")
+
+[node name="weighticon" type="TextureRect" parent="cl/Control/togglemenus/Drop/Control"]
+layout_mode = 0
+offset_left = 516.0
+offset_top = 34.0
+offset_right = 536.0
+offset_bottom = 50.0
+texture = ExtResource("10_o2bon")
+
+[node name="Label" type="Label" parent="cl/Control/togglemenus/Drop/Control/weighticon"]
+layout_mode = 0
+offset_left = 23.0
+offset_top = -1.0
+offset_right = 63.0
+offset_bottom = 15.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("7_ri6w6")
+text = "Weight"
+vertical_alignment = 1
+
+[node name="HSeparator" type="HSeparator" parent="cl/Control/togglemenus/Drop/Control/weighticon"]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = 10.0
+offset_top = -2.0
+offset_right = 82.0
+offset_bottom = 2.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_styles/separator = SubResource("StyleBoxFlat_bmyca")
+
+[node name="Panel" type="NinePatchRect" parent="cl/Control/togglemenus/Drop"]
+z_index = 1
+layout_mode = 0
+offset_left = 72.0
+offset_top = -18.0
+offset_right = 303.0
+offset_bottom = 18.0
+texture = ExtResource("6_xp88d")
+patch_margin_left = 4
+patch_margin_top = 4
+patch_margin_right = 4
+patch_margin_bottom = 4
+axis_stretch_horizontal = 2
+axis_stretch_vertical = 2
+
+[node name="NinePatchRect" type="NinePatchRect" parent="cl/Control/togglemenus/Drop/Panel"]
+z_index = -1
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("7_342oc")
+axis_stretch_horizontal = 2
+axis_stretch_vertical = 2
+
+[node name="TextureRect" type="TextureRect" parent="cl/Control/togglemenus/Drop/Panel"]
+layout_mode = 0
+offset_left = 16.0
+offset_top = -3.0
+offset_right = 58.0
+offset_bottom = 39.0
+texture = ExtResource("8_e7uq3")
+
+[node name="Label" type="Label" parent="cl/Control/togglemenus/Drop/Panel"]
+layout_mode = 0
+offset_right = 231.0
+offset_bottom = 36.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("7_ri6w6")
+theme_override_font_sizes/font_size = 16
+text = "Drop"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="scroll" type="ScrollContainer" parent="cl/Control/togglemenus/Drop"]
+clip_contents = false
+custom_minimum_size = Vector2(576, 248)
+layout_mode = 0
+offset_left = 48.0
+offset_top = 60.0
+offset_right = 624.0
+offset_bottom = 308.0
+horizontal_scroll_mode = 0
+
+[node name="items" type="VBoxContainer" parent="cl/Control/togglemenus/Drop/scroll"]
+custom_minimum_size = Vector2(576, 248)
+layout_mode = 2
+theme_override_constants/separation = 2
+
+[node name="HSeparator" type="HSeparator" parent="cl/Control/togglemenus/Drop"]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -288.0
+offset_top = -28.0
+offset_right = 288.0
+offset_bottom = -24.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_styles/separator = SubResource("StyleBoxFlat_bmyca")
+
+[node name="CloseButton" type="Label" parent="cl/Control/togglemenus/Drop"]
+layout_mode = 1
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -120.0
+offset_top = -29.0
+offset_right = -48.0
+offset_bottom = -6.0
+grow_horizontal = 0
+grow_vertical = 0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("7_ri6w6")
+theme_override_font_sizes/font_size = 16
+text = "[ Close ]"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="TouchScreenButton" type="TouchScreenButton" parent="cl/Control/togglemenus/Drop/CloseButton"]
+position = Vector2(36, 12)
+shape = SubResource("RectangleShape2D_npmj1")
+action = "close"
+
+[node name="Eat" type="NinePatchRect" parent="cl/Control/togglemenus"]
+visible = false
+layout_mode = 0
+offset_left = 48.0
+offset_top = 96.0
+offset_right = 720.0
+offset_bottom = 432.0
+texture = ExtResource("4_tvi1f")
+patch_margin_left = 16
+patch_margin_top = 16
+patch_margin_right = 16
+patch_margin_bottom = 16
+
+[node name="Control" type="Control" parent="cl/Control/togglemenus/Eat"]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="nameicon" type="TextureRect" parent="cl/Control/togglemenus/Eat/Control"]
+layout_mode = 0
+offset_left = 67.0
+offset_top = 34.0
+offset_right = 87.0
+offset_bottom = 50.0
+texture = ExtResource("10_o2bon")
+
+[node name="Label" type="Label" parent="cl/Control/togglemenus/Eat/Control/nameicon"]
+layout_mode = 0
+offset_left = 23.0
+offset_top = -1.0
+offset_right = 63.0
+offset_bottom = 15.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("7_ri6w6")
+text = "Name"
+vertical_alignment = 1
+
+[node name="HSeparator" type="HSeparator" parent="cl/Control/togglemenus/Eat/Control/nameicon"]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = 10.0
+offset_top = -2.0
+offset_right = 58.0
+offset_bottom = 2.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_styles/separator = SubResource("StyleBoxFlat_bmyca")
+
+[node name="weighticon" type="TextureRect" parent="cl/Control/togglemenus/Eat/Control"]
+layout_mode = 0
+offset_left = 516.0
+offset_top = 34.0
+offset_right = 536.0
+offset_bottom = 50.0
+texture = ExtResource("10_o2bon")
+
+[node name="Label" type="Label" parent="cl/Control/togglemenus/Eat/Control/weighticon"]
+layout_mode = 0
+offset_left = 23.0
+offset_top = -1.0
+offset_right = 63.0
+offset_bottom = 15.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("7_ri6w6")
+text = "Weight"
+vertical_alignment = 1
+
+[node name="HSeparator" type="HSeparator" parent="cl/Control/togglemenus/Eat/Control/weighticon"]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = 10.0
+offset_top = -2.0
+offset_right = 82.0
+offset_bottom = 2.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_styles/separator = SubResource("StyleBoxFlat_bmyca")
+
+[node name="Panel" type="NinePatchRect" parent="cl/Control/togglemenus/Eat"]
+z_index = 1
+layout_mode = 0
+offset_left = 72.0
+offset_top = -18.0
+offset_right = 303.0
+offset_bottom = 18.0
+texture = ExtResource("6_xp88d")
+patch_margin_left = 4
+patch_margin_top = 4
+patch_margin_right = 4
+patch_margin_bottom = 4
+axis_stretch_horizontal = 2
+axis_stretch_vertical = 2
+
+[node name="NinePatchRect" type="NinePatchRect" parent="cl/Control/togglemenus/Eat/Panel"]
+z_index = -1
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("7_342oc")
+axis_stretch_horizontal = 2
+axis_stretch_vertical = 2
+
+[node name="TextureRect" type="TextureRect" parent="cl/Control/togglemenus/Eat/Panel"]
+layout_mode = 0
+offset_left = 16.0
+offset_top = -3.0
+offset_right = 58.0
+offset_bottom = 39.0
+texture = ExtResource("13_jjx5d")
+
+[node name="Label" type="Label" parent="cl/Control/togglemenus/Eat/Panel"]
+layout_mode = 0
+offset_right = 231.0
+offset_bottom = 36.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("7_ri6w6")
+theme_override_font_sizes/font_size = 16
+text = "Eat"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="scroll" type="ScrollContainer" parent="cl/Control/togglemenus/Eat"]
+custom_minimum_size = Vector2(576, 248)
+layout_mode = 0
+offset_left = 48.0
+offset_top = 60.0
+offset_right = 624.0
+offset_bottom = 308.0
+horizontal_scroll_mode = 0
+
+[node name="items" type="VBoxContainer" parent="cl/Control/togglemenus/Eat/scroll"]
+custom_minimum_size = Vector2(576, 248)
+layout_mode = 2
+theme_override_constants/separation = 2
+
+[node name="HSeparator" type="HSeparator" parent="cl/Control/togglemenus/Eat"]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -288.0
+offset_top = -28.0
+offset_right = 288.0
+offset_bottom = -24.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_styles/separator = SubResource("StyleBoxFlat_bmyca")
+
+[node name="CloseButton" type="Label" parent="cl/Control/togglemenus/Eat"]
+layout_mode = 1
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -120.0
+offset_top = -29.0
+offset_right = -48.0
+offset_bottom = -6.0
+grow_horizontal = 0
+grow_vertical = 0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("7_ri6w6")
+theme_override_font_sizes/font_size = 16
+text = "[ Close ]"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="TouchScreenButton" type="TouchScreenButton" parent="cl/Control/togglemenus/Eat/CloseButton"]
+position = Vector2(36, 12)
+shape = SubResource("RectangleShape2D_npmj1")
+action = "close"
+
+[node name="Talk" type="NinePatchRect" parent="cl/Control/togglemenus"]
+visible = false
+layout_mode = 0
+offset_left = 48.0
+offset_top = 96.0
+offset_right = 720.0
+offset_bottom = 432.0
+texture = ExtResource("4_tvi1f")
+patch_margin_left = 16
+patch_margin_top = 16
+patch_margin_right = 16
+patch_margin_bottom = 16
+
+[node name="c" type="Control" parent="cl/Control/togglemenus/Talk"]
+anchors_preset = 0
+mouse_filter = 2
+
+[node name="npctitle" type="Label" parent="cl/Control/togglemenus/Talk/c"]
+layout_mode = 0
+offset_left = 48.0
+offset_top = 24.0
+offset_right = 624.0
+offset_bottom = 43.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("34_spxpl")
+theme_override_font_sizes/font_size = 16
+text = "Akile the Innkeeper Male Shop Rank: 8 Activity: 98"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="portrait" type="TextureRect" parent="cl/Control/togglemenus/Talk/c"]
+layout_mode = 0
+offset_left = 48.0
+offset_top = 48.0
+offset_right = 96.0
+offset_bottom = 120.0
+scale = Vector2(2, 2)
+texture = ExtResource("35_t34s7")
+
+[node name="text" type="Label" parent="cl/Control/togglemenus/Talk/c"]
+layout_mode = 0
+offset_left = 168.0
+offset_top = 48.0
+offset_right = 624.0
+offset_bottom = 144.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("7_ri6w6")
+text = "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+autowrap_mode = 3
+
+[node name="impress" type="TextureRect" parent="cl/Control/togglemenus/Talk/c"]
+layout_mode = 0
+offset_left = 48.0
+offset_top = 204.0
+offset_right = 68.0
+offset_bottom = 220.0
+texture = ExtResource("10_o2bon")
+
+[node name="Label" type="Label" parent="cl/Control/togglemenus/Talk/c/impress"]
+layout_mode = 0
+offset_left = 23.0
+offset_right = 79.0
+offset_bottom = 16.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("7_ri6w6")
+text = "Impress"
+vertical_alignment = 1
+
+[node name="HSeparator" type="HSeparator" parent="cl/Control/togglemenus/Talk/c/impress/Label"]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -28.0
+offset_top = -2.0
+offset_right = 32.0
+offset_bottom = 2.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_styles/separator = SubResource("StyleBoxFlat_bmyca")
+
+[node name="Label2" type="Label" parent="cl/Control/togglemenus/Talk/c/impress"]
+layout_mode = 0
+offset_top = 20.0
+offset_right = 96.0
+offset_bottom = 36.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("7_ri6w6")
+text = "(50) Amiable"
+
+[node name="cont" type="VBoxContainer" parent="cl/Control/togglemenus/Talk/c"]
+layout_mode = 0
+offset_left = 168.0
+offset_top = 156.0
+offset_right = 624.0
+offset_bottom = 287.0
+theme_override_constants/separation = 1
+
+[node name="Use" type="NinePatchRect" parent="cl/Control/togglemenus"]
+visible = false
+layout_mode = 0
+offset_left = 48.0
+offset_top = 96.0
+offset_right = 720.0
+offset_bottom = 432.0
+texture = ExtResource("4_tvi1f")
+patch_margin_left = 16
+patch_margin_top = 16
+patch_margin_right = 16
+patch_margin_bottom = 16
+
+[node name="Control" type="Control" parent="cl/Control/togglemenus/Use"]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="nameicon" type="TextureRect" parent="cl/Control/togglemenus/Use/Control"]
+layout_mode = 0
+offset_left = 67.0
+offset_top = 34.0
+offset_right = 87.0
+offset_bottom = 50.0
+texture = ExtResource("10_o2bon")
+
+[node name="Label" type="Label" parent="cl/Control/togglemenus/Use/Control/nameicon"]
+layout_mode = 0
+offset_left = 23.0
+offset_top = -1.0
+offset_right = 63.0
+offset_bottom = 15.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("7_ri6w6")
+text = "Name"
+vertical_alignment = 1
+
+[node name="HSeparator" type="HSeparator" parent="cl/Control/togglemenus/Use/Control/nameicon"]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = 10.0
+offset_top = -2.0
+offset_right = 58.0
+offset_bottom = 2.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_styles/separator = SubResource("StyleBoxFlat_bmyca")
+
+[node name="weighticon" type="TextureRect" parent="cl/Control/togglemenus/Use/Control"]
+layout_mode = 0
+offset_left = 516.0
+offset_top = 34.0
+offset_right = 536.0
+offset_bottom = 50.0
+texture = ExtResource("10_o2bon")
+
+[node name="Label" type="Label" parent="cl/Control/togglemenus/Use/Control/weighticon"]
+layout_mode = 0
+offset_left = 23.0
+offset_top = -1.0
+offset_right = 63.0
+offset_bottom = 15.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("7_ri6w6")
+text = "Weight"
+vertical_alignment = 1
+
+[node name="HSeparator" type="HSeparator" parent="cl/Control/togglemenus/Use/Control/weighticon"]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = 10.0
+offset_top = -2.0
+offset_right = 82.0
+offset_bottom = 2.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_styles/separator = SubResource("StyleBoxFlat_bmyca")
+
+[node name="Panel" type="NinePatchRect" parent="cl/Control/togglemenus/Use"]
+z_index = 1
+layout_mode = 0
+offset_left = 72.0
+offset_top = -18.0
+offset_right = 303.0
+offset_bottom = 18.0
+texture = ExtResource("6_xp88d")
+patch_margin_left = 4
+patch_margin_top = 4
+patch_margin_right = 4
+patch_margin_bottom = 4
+axis_stretch_horizontal = 2
+axis_stretch_vertical = 2
+
+[node name="NinePatchRect" type="NinePatchRect" parent="cl/Control/togglemenus/Use/Panel"]
+z_index = -1
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("7_342oc")
+axis_stretch_horizontal = 2
+axis_stretch_vertical = 2
+
+[node name="TextureRect" type="TextureRect" parent="cl/Control/togglemenus/Use/Panel"]
+layout_mode = 0
+offset_left = 16.0
+offset_top = -3.0
+offset_right = 58.0
+offset_bottom = 39.0
+texture = ExtResource("36_fh0vh")
+
+[node name="Label" type="Label" parent="cl/Control/togglemenus/Use/Panel"]
+layout_mode = 0
+offset_right = 231.0
+offset_bottom = 36.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("7_ri6w6")
+theme_override_font_sizes/font_size = 16
+text = "Use"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="scroll" type="ScrollContainer" parent="cl/Control/togglemenus/Use"]
+clip_contents = false
+custom_minimum_size = Vector2(576, 248)
+layout_mode = 0
+offset_left = 48.0
+offset_top = 60.0
+offset_right = 624.0
+offset_bottom = 308.0
+horizontal_scroll_mode = 0
+
+[node name="items" type="VBoxContainer" parent="cl/Control/togglemenus/Use/scroll"]
+custom_minimum_size = Vector2(576, 248)
+layout_mode = 2
+theme_override_constants/separation = 2
+
+[node name="HSeparator" type="HSeparator" parent="cl/Control/togglemenus/Use"]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -288.0
+offset_top = -28.0
+offset_right = 288.0
+offset_bottom = -24.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_styles/separator = SubResource("StyleBoxFlat_bmyca")
+
+[node name="CloseButton" type="Label" parent="cl/Control/togglemenus/Use"]
+layout_mode = 1
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -120.0
+offset_top = -29.0
+offset_right = -48.0
+offset_bottom = -6.0
+grow_horizontal = 0
+grow_vertical = 0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("7_ri6w6")
+theme_override_font_sizes/font_size = 16
+text = "[ Close ]"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="TouchScreenButton" type="TouchScreenButton" parent="cl/Control/togglemenus/Use/CloseButton"]
+position = Vector2(36, 12)
+shape = SubResource("RectangleShape2D_npmj1")
+action = "close"
+
+[node name="Wear" type="NinePatchRect" parent="cl/Control/togglemenus"]
+visible = false
+layout_mode = 0
+offset_left = 48.0
+offset_top = 96.0
+offset_right = 720.0
+offset_bottom = 432.0
+texture = ExtResource("4_tvi1f")
+patch_margin_left = 16
+patch_margin_top = 16
+patch_margin_right = 16
+patch_margin_bottom = 16
+
+[node name="Control" type="Control" parent="cl/Control/togglemenus/Wear"]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="nameicon" type="TextureRect" parent="cl/Control/togglemenus/Wear/Control"]
+layout_mode = 0
+offset_left = 67.0
+offset_top = 34.0
+offset_right = 87.0
+offset_bottom = 50.0
+texture = ExtResource("10_o2bon")
+
+[node name="Label" type="Label" parent="cl/Control/togglemenus/Wear/Control/nameicon"]
+layout_mode = 0
+offset_left = 23.0
+offset_top = -1.0
+offset_right = 63.0
+offset_bottom = 15.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("7_ri6w6")
+text = "Category/Name"
+vertical_alignment = 1
+
+[node name="HSeparator" type="HSeparator" parent="cl/Control/togglemenus/Wear/Control/nameicon"]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = 10.0
+offset_top = -2.0
+offset_right = 130.0
+offset_bottom = 2.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_styles/separator = SubResource("StyleBoxFlat_bmyca")
+
+[node name="weighticon" type="TextureRect" parent="cl/Control/togglemenus/Wear/Control"]
+layout_mode = 0
+offset_left = 516.0
+offset_top = 34.0
+offset_right = 536.0
+offset_bottom = 50.0
+texture = ExtResource("10_o2bon")
+
+[node name="Label" type="Label" parent="cl/Control/togglemenus/Wear/Control/weighticon"]
+layout_mode = 0
+offset_left = 23.0
+offset_top = -1.0
+offset_right = 63.0
+offset_bottom = 15.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("7_ri6w6")
+text = "Weight"
+vertical_alignment = 1
+
+[node name="HSeparator" type="HSeparator" parent="cl/Control/togglemenus/Wear/Control/weighticon"]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = 10.0
+offset_top = -2.0
+offset_right = 82.0
+offset_bottom = 2.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_styles/separator = SubResource("StyleBoxFlat_bmyca")
+
+[node name="Panel" type="NinePatchRect" parent="cl/Control/togglemenus/Wear"]
+z_index = 1
+layout_mode = 0
+offset_left = 72.0
+offset_top = -18.0
+offset_right = 303.0
+offset_bottom = 18.0
+texture = ExtResource("6_xp88d")
+patch_margin_left = 4
+patch_margin_top = 4
+patch_margin_right = 4
+patch_margin_bottom = 4
+axis_stretch_horizontal = 2
+axis_stretch_vertical = 2
+
+[node name="NinePatchRect" type="NinePatchRect" parent="cl/Control/togglemenus/Wear/Panel"]
+z_index = -1
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("7_342oc")
+axis_stretch_horizontal = 2
+axis_stretch_vertical = 2
+
+[node name="TextureRect" type="TextureRect" parent="cl/Control/togglemenus/Wear/Panel"]
+layout_mode = 0
+offset_left = 16.0
+offset_top = -3.0
+offset_right = 58.0
+offset_bottom = 39.0
+texture = ExtResource("36_afwvs")
+
+[node name="Label" type="Label" parent="cl/Control/togglemenus/Wear/Panel"]
+layout_mode = 0
+offset_right = 231.0
+offset_bottom = 36.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("7_ri6w6")
+theme_override_font_sizes/font_size = 16
+text = "Equipment"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="scroll" type="ScrollContainer" parent="cl/Control/togglemenus/Wear"]
+clip_contents = false
+custom_minimum_size = Vector2(576, 248)
+layout_mode = 0
+offset_left = 48.0
+offset_top = 60.0
+offset_right = 624.0
+offset_bottom = 308.0
+horizontal_scroll_mode = 0
+
+[node name="items" type="VBoxContainer" parent="cl/Control/togglemenus/Wear/scroll"]
+custom_minimum_size = Vector2(576, 248)
+layout_mode = 2
+theme_override_constants/separation = 2
+
+[node name="HSeparator" type="HSeparator" parent="cl/Control/togglemenus/Wear"]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -288.0
+offset_top = -28.0
+offset_right = 288.0
+offset_bottom = -24.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_styles/separator = SubResource("StyleBoxFlat_bmyca")
+
+[node name="CloseButton" type="Label" parent="cl/Control/togglemenus/Wear"]
+layout_mode = 1
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -120.0
+offset_top = -29.0
+offset_right = -48.0
+offset_bottom = -6.0
+grow_horizontal = 0
+grow_vertical = 0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("7_ri6w6")
+theme_override_font_sizes/font_size = 16
+text = "[ Close ]"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="TouchScreenButton" type="TouchScreenButton" parent="cl/Control/togglemenus/Wear/CloseButton"]
+position = Vector2(36, 12)
+shape = SubResource("RectangleShape2D_npmj1")
+action = "close"
+
+[node name="Cook" type="Control" parent="cl/Control/togglemenus"]
+visible = false
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="half1" type="NinePatchRect" parent="cl/Control/togglemenus/Cook"]
+visible = false
+layout_mode = 0
+offset_left = 48.0
+offset_top = 96.0
+offset_right = 380.0
+offset_bottom = 432.0
+texture = ExtResource("4_tvi1f")
+patch_margin_left = 16
+patch_margin_top = 16
+patch_margin_right = 16
+patch_margin_bottom = 16
+
+[node name="Control" type="Control" parent="cl/Control/togglemenus/Cook/half1"]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="nameicon" type="TextureRect" parent="cl/Control/togglemenus/Cook/half1/Control"]
+layout_mode = 0
+offset_left = 48.0
+offset_top = 34.0
+offset_right = 68.0
+offset_bottom = 50.0
+texture = ExtResource("10_o2bon")
+
+[node name="Label" type="Label" parent="cl/Control/togglemenus/Cook/half1/Control/nameicon"]
+layout_mode = 0
+offset_left = 23.0
+offset_top = -1.0
+offset_right = 63.0
+offset_bottom = 15.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("7_ri6w6")
+text = "Name"
+vertical_alignment = 1
+
+[node name="HSeparator" type="HSeparator" parent="cl/Control/togglemenus/Cook/half1/Control/nameicon"]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = 10.0
+offset_top = -2.0
+offset_right = 58.0
+offset_bottom = 2.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_styles/separator = SubResource("StyleBoxFlat_bmyca")
+
+[node name="Panel" type="NinePatchRect" parent="cl/Control/togglemenus/Cook/half1"]
+z_index = 1
+layout_mode = 0
+offset_left = 72.0
+offset_top = -18.0
+offset_right = 264.0
+offset_bottom = 18.0
+texture = ExtResource("6_xp88d")
+patch_margin_left = 4
+patch_margin_top = 4
+patch_margin_right = 4
+patch_margin_bottom = 4
+axis_stretch_horizontal = 2
+axis_stretch_vertical = 2
+
+[node name="NinePatchRect" type="NinePatchRect" parent="cl/Control/togglemenus/Cook/half1/Panel"]
+z_index = -1
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("7_342oc")
+axis_stretch_horizontal = 2
+axis_stretch_vertical = 2
+
+[node name="Label" type="Label" parent="cl/Control/togglemenus/Cook/half1/Panel"]
+layout_mode = 0
+offset_right = 192.0
+offset_bottom = 36.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("7_ri6w6")
+theme_override_font_sizes/font_size = 16
+text = "Choose a Recipe"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="scroll" type="ScrollContainer" parent="cl/Control/togglemenus/Cook/half1"]
+clip_contents = false
+custom_minimum_size = Vector2(240, 248)
+layout_mode = 0
+offset_left = 48.0
+offset_top = 60.0
+offset_right = 288.0
+offset_bottom = 308.0
+horizontal_scroll_mode = 0
+
+[node name="items" type="VBoxContainer" parent="cl/Control/togglemenus/Cook/half1/scroll"]
+custom_minimum_size = Vector2(240, 248)
+layout_mode = 2
+theme_override_constants/separation = 2
+
+[node name="half2" type="NinePatchRect" parent="cl/Control/togglemenus/Cook"]
+visible = false
+layout_mode = 0
+offset_left = 388.0
+offset_top = 96.0
+offset_right = 720.0
+offset_bottom = 432.0
+texture = ExtResource("4_tvi1f")
+patch_margin_left = 16
+patch_margin_top = 16
+patch_margin_right = 16
+patch_margin_bottom = 16
+
+[node name="recipeselect" type="Control" parent="cl/Control/togglemenus/Cook/half2"]
+custom_minimum_size = Vector2(240, 16)
+layout_mode = 3
+anchors_preset = 0
+offset_left = 48.0
+offset_top = 37.0
+offset_right = 288.0
+offset_bottom = 53.0
+
+[node name="thing" type="Label" parent="cl/Control/togglemenus/Cook/half2/recipeselect"]
+custom_minimum_size = Vector2(0, 16)
+layout_mode = 0
+offset_right = 176.0
+offset_bottom = 16.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("7_ri6w6")
+text = "Recipe:"
+
+[node name="icon" type="TextureRect" parent="cl/Control/togglemenus/Cook/half2/recipeselect"]
+layout_mode = 0
+offset_left = 60.0
+offset_top = -18.0
+offset_right = 108.0
+offset_bottom = 30.0
+texture = ExtResource("37_dkc76")
+
+[node name="label" type="Label" parent="cl/Control/togglemenus/Cook/half2/recipeselect"]
+custom_minimum_size = Vector2(0, 16)
+layout_mode = 0
+offset_left = 120.0
+offset_right = 236.0
+offset_bottom = 16.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("7_ri6w6")
+text = "Just cook."
+
+[node name="Label" type="Label" parent="cl/Control/togglemenus/Cook/half2/recipeselect"]
+layout_mode = 0
+offset_top = 29.0
+offset_right = 236.0
+offset_bottom = 45.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("7_ri6w6")
+text = "Ingredients"
+
+[node name="HSeparator" type="HSeparator" parent="cl/Control/togglemenus/Cook/half2/recipeselect"]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -120.0
+offset_top = 29.0
+offset_right = 116.0
+offset_bottom = 33.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_styles/separator = SubResource("StyleBoxFlat_bmyca")
+
+[node name="scroll" type="ScrollContainer" parent="cl/Control/togglemenus/Cook/half2"]
+clip_contents = false
+custom_minimum_size = Vector2(236, 224)
+layout_mode = 0
+offset_left = 48.0
+offset_top = 84.0
+offset_right = 292.0
+offset_bottom = 308.0
+horizontal_scroll_mode = 0
+
+[node name="items" type="VBoxContainer" parent="cl/Control/togglemenus/Cook/half2/scroll"]
+custom_minimum_size = Vector2(236, 0)
+layout_mode = 2
+theme_override_constants/separation = 0
+
+[node name="HSeparator" type="HSeparator" parent="cl/Control/togglemenus/Cook/half2"]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -142.0
+offset_top = -28.0
+offset_right = 142.0
+offset_bottom = -24.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_styles/separator = SubResource("StyleBoxFlat_bmyca")
+
+[node name="CloseButton" type="Label" parent="cl/Control/togglemenus/Cook/half2"]
+layout_mode = 1
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -120.0
+offset_top = -29.0
+offset_right = -48.0
+offset_bottom = -6.0
+grow_horizontal = 0
+grow_vertical = 0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("7_ri6w6")
+theme_override_font_sizes/font_size = 16
+text = "[ Close ]"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="TouchScreenButton" type="TouchScreenButton" parent="cl/Control/togglemenus/Cook/half2/CloseButton"]
+position = Vector2(36, 12)
+shape = SubResource("RectangleShape2D_npmj1")
+action = "close"
+
+[node name="cooknow" type="Label" parent="cl/Control/togglemenus/Cook/half2"]
+layout_mode = 0
+offset_left = 48.0
+offset_top = 281.0
+offset_right = 284.0
+offset_bottom = 297.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("7_ri6w6")
+text = "Cook!"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="touch" type="TouchScreenButton" parent="cl/Control/togglemenus/Cook/half2/cooknow"]
+position = Vector2(118, 8)
+shape = SubResource("RectangleShape2D_hx68y")
+
+[node name="half3" type="NinePatchRect" parent="cl/Control/togglemenus/Cook"]
+visible = false
+offset_left = 48.0
+offset_top = 96.0
+offset_right = 380.0
+offset_bottom = 432.0
+texture = ExtResource("4_tvi1f")
+patch_margin_left = 16
+patch_margin_top = 16
+patch_margin_right = 16
+patch_margin_bottom = 16
+
+[node name="Control" type="Control" parent="cl/Control/togglemenus/Cook/half3"]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="nameicon" type="TextureRect" parent="cl/Control/togglemenus/Cook/half3/Control"]
+layout_mode = 0
+offset_left = 48.0
+offset_top = 34.0
+offset_right = 68.0
+offset_bottom = 50.0
+texture = ExtResource("10_o2bon")
+
+[node name="Label" type="Label" parent="cl/Control/togglemenus/Cook/half3/Control/nameicon"]
+layout_mode = 0
+offset_left = 23.0
+offset_top = -1.0
+offset_right = 63.0
+offset_bottom = 15.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("7_ri6w6")
+text = "Name"
+vertical_alignment = 1
+
+[node name="HSeparator" type="HSeparator" parent="cl/Control/togglemenus/Cook/half3/Control/nameicon"]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = 10.0
+offset_top = -2.0
+offset_right = 58.0
+offset_bottom = 2.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_styles/separator = SubResource("StyleBoxFlat_bmyca")
+
+[node name="scroll" type="ScrollContainer" parent="cl/Control/togglemenus/Cook/half3"]
+clip_contents = false
+custom_minimum_size = Vector2(240, 248)
+layout_mode = 0
+offset_left = 48.0
+offset_top = 60.0
+offset_right = 296.0
+offset_bottom = 308.0
+horizontal_scroll_mode = 0
+
+[node name="items" type="VBoxContainer" parent="cl/Control/togglemenus/Cook/half3/scroll"]
+custom_minimum_size = Vector2(240, 248)
+layout_mode = 2
+theme_override_constants/separation = 2
+
+[node name="buffshow" type="VBoxContainer" parent="cl/Control"]
+custom_minimum_size = Vector2(144, 0)
+layout_mode = 0
+offset_left = 8.0
+offset_top = 8.0
+offset_right = 152.0
+offset_bottom = 456.0
+alignment = 2
+
+[node name="fullness" type="Label" parent="cl/Control/buffshow"]
+custom_minimum_size = Vector2(0, 24)
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("7_ri6w6")
+theme_override_styles/normal = SubResource("StyleBoxTexture_mtcgn")
+text = "Satisfied"
+vertical_alignment = 3
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="mobilecontrols" type="Control" parent="CanvasLayer"]
+z_index = 20
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="movepad" type="Control" parent="CanvasLayer/mobilecontrols"]
+modulate = Color(1, 1, 1, 0.784314)
+anchors_preset = 0
+offset_left = 16.0
+offset_top = 342.0
+offset_right = 56.0
+offset_bottom = 382.0
+scale = Vector2(2, 2)
+mouse_filter = 2
+
+[node name="Button" type="TouchScreenButton" parent="CanvasLayer/mobilecontrols/movepad"]
+position = Vector2(39, 0)
+rotation = 1.5708
+texture_normal = ExtResource("3_42pr3")
+shape = SubResource("RectangleShape2D_chinn")
+action = "up"
+
+[node name="Button2" type="TouchScreenButton" parent="CanvasLayer/mobilecontrols/movepad"]
+position = Vector2(39, 61)
+rotation = 1.5708
+scale = Vector2(-1, 1)
+texture_normal = ExtResource("3_42pr3")
+shape = SubResource("RectangleShape2D_bhmmd")
+action = "down"
+
+[node name="Button3" type="TouchScreenButton" parent="CanvasLayer/mobilecontrols/movepad"]
+position = Vector2(0, 22)
+texture_normal = ExtResource("3_42pr3")
+shape = SubResource("RectangleShape2D_e1ce5")
+action = "left"
+
+[node name="Button4" type="TouchScreenButton" parent="CanvasLayer/mobilecontrols/movepad"]
+position = Vector2(61, 22)
+scale = Vector2(-1, 1)
+texture_normal = ExtResource("3_42pr3")
+shape = SubResource("RectangleShape2D_f2o0v")
+action = "right"
+
+[node name="menuopener" type="TouchScreenButton" parent="CanvasLayer/mobilecontrols"]
+position = Vector2(666, 380)
+texture_normal = ExtResource("6_wljsu")
+shape = SubResource("CircleShape2D_74p1y")
+action = "openmobilemenu"
+
+[node name="lilmenus" type="Control" parent="CanvasLayer/mobilecontrols/menuopener"]
+visible = false
+layout_mode = 3
+anchors_preset = 0
+offset_left = 15.0
+offset_top = 15.0
+offset_right = 55.0
+offset_bottom = 55.0
+
+[node name="2" type="Control" parent="CanvasLayer/mobilecontrols/menuopener/lilmenus"]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Label" type="Label" parent="CanvasLayer/mobilecontrols/menuopener/lilmenus/2"]
+layout_mode = 0
+offset_left = -24.0
+offset_top = -12.0
+offset_right = 24.0
+offset_bottom = 12.0
+theme_override_constants/outline_size = 2
+theme_override_fonts/font = ExtResource("7_ri6w6")
+theme_override_font_sizes/font_size = 16
+text = "*"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Drop" type="TouchScreenButton" parent="CanvasLayer/mobilecontrols/menuopener/lilmenus/2"]
+position = Vector2(-15, -80)
+texture_normal = ExtResource("7_ay655")
+shape = SubResource("CircleShape2D_81m0v")
+action = "drop"
+
+[node name="Label" type="Label" parent="CanvasLayer/mobilecontrols/menuopener/lilmenus/2/Drop"]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -20.0
+offset_right = 20.0
+offset_bottom = 20.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/outline_size = 2
+theme_override_fonts/font = ExtResource("7_ri6w6")
+theme_override_font_sizes/font_size = 16
+text = "Drop
+"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Get" type="TouchScreenButton" parent="CanvasLayer/mobilecontrols/menuopener/lilmenus/2"]
+position = Vector2(-56, -56)
+texture_normal = ExtResource("7_ay655")
+shape = SubResource("CircleShape2D_81m0v")
+action = "get"
+
+[node name="Label" type="Label" parent="CanvasLayer/mobilecontrols/menuopener/lilmenus/2/Get"]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -20.0
+offset_right = 20.0
+offset_bottom = 20.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/outline_size = 2
+theme_override_fonts/font = ExtResource("7_ri6w6")
+theme_override_font_sizes/font_size = 16
+text = "Get"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Interact" type="TouchScreenButton" parent="CanvasLayer/mobilecontrols/menuopener/lilmenus/2"]
+position = Vector2(26, -56)
+texture_normal = ExtResource("7_ay655")
+shape = SubResource("CircleShape2D_81m0v")
+
+[node name="Label" type="Label" parent="CanvasLayer/mobilecontrols/menuopener/lilmenus/2/Interact"]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -20.0
+offset_right = 20.0
+offset_bottom = 20.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/outline_size = 2
+theme_override_fonts/font = ExtResource("7_ri6w6")
+theme_override_font_sizes/font_size = 16
+text = "Interact"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="LEFT" type="TouchScreenButton" parent="CanvasLayer/mobilecontrols/menuopener/lilmenus/2"]
+position = Vector2(-80, -15)
+texture_normal = ExtResource("6_wljsu")
+shape = SubResource("CircleShape2D_81m0v")
+action = "sc1"
+
+[node name="Label" type="Label" parent="CanvasLayer/mobilecontrols/menuopener/lilmenus/2/LEFT"]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -20.0
+offset_right = 20.0
+offset_bottom = 20.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/outline_size = 2
+theme_override_fonts/font = ExtResource("7_ri6w6")
+theme_override_font_sizes/font_size = 16
+text = "<"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="RIGHT" type="TouchScreenButton" parent="CanvasLayer/mobilecontrols/menuopener/lilmenus/2"]
+position = Vector2(50, -15)
+texture_normal = ExtResource("6_wljsu")
+shape = SubResource("CircleShape2D_81m0v")
+action = "sc3"
+
+[node name="Label" type="Label" parent="CanvasLayer/mobilecontrols/menuopener/lilmenus/2/RIGHT"]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -20.0
+offset_right = 20.0
+offset_bottom = 20.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/outline_size = 2
+theme_override_fonts/font = ExtResource("7_ri6w6")
+theme_override_font_sizes/font_size = 16
+text = ">"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Wear" type="TouchScreenButton" parent="CanvasLayer/mobilecontrols/menuopener/lilmenus/2"]
+position = Vector2(-56, 26)
+texture_normal = ExtResource("7_ay655")
+shape = SubResource("CircleShape2D_81m0v")
+
+[node name="Label" type="Label" parent="CanvasLayer/mobilecontrols/menuopener/lilmenus/2/Wear"]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -21.0
+offset_top = -21.0
+offset_right = 23.0
+offset_bottom = 22.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/outline_size = 2
+theme_override_fonts/font = ExtResource("7_ri6w6")
+theme_override_font_sizes/font_size = 16
+text = "Wear"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Close" type="TouchScreenButton" parent="CanvasLayer/mobilecontrols/menuopener/lilmenus/2"]
+position = Vector2(26, 26)
+texture_normal = ExtResource("7_ay655")
+shape = SubResource("CircleShape2D_81m0v")
+
+[node name="Label" type="Label" parent="CanvasLayer/mobilecontrols/menuopener/lilmenus/2/Close"]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -20.0
+offset_right = 20.0
+offset_bottom = 20.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/outline_size = 2
+theme_override_fonts/font = ExtResource("7_ri6w6")
+theme_override_font_sizes/font_size = 16
+text = "Close"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Open" type="TouchScreenButton" parent="CanvasLayer/mobilecontrols/menuopener/lilmenus/2"]
+position = Vector2(-15, 50)
+texture_normal = ExtResource("7_ay655")
+shape = SubResource("CircleShape2D_81m0v")
+
+[node name="Label" type="Label" parent="CanvasLayer/mobilecontrols/menuopener/lilmenus/2/Open"]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -20.0
+offset_right = 20.0
+offset_bottom = 20.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/outline_size = 2
+theme_override_fonts/font = ExtResource("7_ri6w6")
+theme_override_font_sizes/font_size = 16
+text = "Open"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="1" type="Control" parent="CanvasLayer/mobilecontrols/menuopener/lilmenus"]
+visible = false
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Label" type="Label" parent="CanvasLayer/mobilecontrols/menuopener/lilmenus/1"]
+layout_mode = 0
+offset_left = -24.0
+offset_top = -12.0
+offset_right = 24.0
+offset_bottom = 12.0
+theme_override_constants/outline_size = 2
+theme_override_fonts/font = ExtResource("7_ri6w6")
+theme_override_font_sizes/font_size = 16
+text = "<
+"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Feat" type="TouchScreenButton" parent="CanvasLayer/mobilecontrols/menuopener/lilmenus/1"]
+position = Vector2(-15, -80)
+texture_normal = ExtResource("7_ay655")
+shape = SubResource("CircleShape2D_81m0v")
+
+[node name="Label" type="Label" parent="CanvasLayer/mobilecontrols/menuopener/lilmenus/1/Feat"]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -20.0
+offset_right = 20.0
+offset_bottom = 20.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/outline_size = 2
+theme_override_fonts/font = ExtResource("7_ri6w6")
+theme_override_font_sizes/font_size = 16
+text = "Feat"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Journal" type="TouchScreenButton" parent="CanvasLayer/mobilecontrols/menuopener/lilmenus/1"]
+position = Vector2(-56, -56)
+texture_normal = ExtResource("7_ay655")
+shape = SubResource("CircleShape2D_81m0v")
+
+[node name="Label" type="Label" parent="CanvasLayer/mobilecontrols/menuopener/lilmenus/1/Journal"]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -20.0
+offset_right = 20.0
+offset_bottom = 20.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/outline_size = 2
+theme_override_fonts/font = ExtResource("7_ri6w6")
+theme_override_font_sizes/font_size = 16
+text = "Journal"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Material" type="TouchScreenButton" parent="CanvasLayer/mobilecontrols/menuopener/lilmenus/1"]
+position = Vector2(26, -56)
+texture_normal = ExtResource("7_ay655")
+shape = SubResource("CircleShape2D_81m0v")
+
+[node name="Label" type="Label" parent="CanvasLayer/mobilecontrols/menuopener/lilmenus/1/Material"]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -20.0
+offset_right = 20.0
+offset_bottom = 20.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/outline_size = 2
+theme_override_fonts/font = ExtResource("7_ri6w6")
+theme_override_font_sizes/font_size = 16
+text = "Material"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Chara" type="TouchScreenButton" parent="CanvasLayer/mobilecontrols/menuopener/lilmenus/1"]
+position = Vector2(-80, -15)
+texture_normal = ExtResource("7_ay655")
+shape = SubResource("CircleShape2D_81m0v")
+
+[node name="Label" type="Label" parent="CanvasLayer/mobilecontrols/menuopener/lilmenus/1/Chara"]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -20.0
+offset_right = 20.0
+offset_bottom = 20.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/outline_size = 2
+theme_override_fonts/font = ExtResource("7_ri6w6")
+theme_override_font_sizes/font_size = 16
+text = "Chara"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="RIGHT" type="TouchScreenButton" parent="CanvasLayer/mobilecontrols/menuopener/lilmenus/1"]
+position = Vector2(50, -15)
+texture_normal = ExtResource("6_wljsu")
+shape = SubResource("CircleShape2D_81m0v")
+action = "sc2"
+
+[node name="Label" type="Label" parent="CanvasLayer/mobilecontrols/menuopener/lilmenus/1/RIGHT"]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -20.0
+offset_right = 20.0
+offset_bottom = 20.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/outline_size = 2
+theme_override_fonts/font = ExtResource("7_ri6w6")
+theme_override_font_sizes/font_size = 16
+text = "*"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Log" type="TouchScreenButton" parent="CanvasLayer/mobilecontrols/menuopener/lilmenus/1"]
+position = Vector2(-56, 26)
+texture_normal = ExtResource("7_ay655")
+shape = SubResource("CircleShape2D_81m0v")
+
+[node name="Label" type="Label" parent="CanvasLayer/mobilecontrols/menuopener/lilmenus/1/Log"]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -21.0
+offset_top = -21.0
+offset_right = 23.0
+offset_bottom = 22.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/outline_size = 2
+theme_override_fonts/font = ExtResource("7_ri6w6")
+theme_override_font_sizes/font_size = 16
+text = "Log"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Save" type="TouchScreenButton" parent="CanvasLayer/mobilecontrols/menuopener/lilmenus/1"]
+position = Vector2(26, 26)
+texture_normal = ExtResource("7_ay655")
+shape = SubResource("CircleShape2D_81m0v")
+
+[node name="Label" type="Label" parent="CanvasLayer/mobilecontrols/menuopener/lilmenus/1/Save"]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -20.0
+offset_right = 20.0
+offset_bottom = 20.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/outline_size = 2
+theme_override_fonts/font = ExtResource("7_ri6w6")
+theme_override_font_sizes/font_size = 16
+text = "Save"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Help" type="TouchScreenButton" parent="CanvasLayer/mobilecontrols/menuopener/lilmenus/1"]
+position = Vector2(-15, 50)
+texture_normal = ExtResource("7_ay655")
+shape = SubResource("CircleShape2D_81m0v")
+
+[node name="Label" type="Label" parent="CanvasLayer/mobilecontrols/menuopener/lilmenus/1/Help"]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -20.0
+offset_right = 20.0
+offset_bottom = 20.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/outline_size = 2
+theme_override_fonts/font = ExtResource("7_ri6w6")
+theme_override_font_sizes/font_size = 16
+text = "Help"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="3" type="Control" parent="CanvasLayer/mobilecontrols/menuopener/lilmenus"]
+visible = false
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Label" type="Label" parent="CanvasLayer/mobilecontrols/menuopener/lilmenus/3"]
+layout_mode = 0
+offset_left = -24.0
+offset_top = -12.0
+offset_right = 24.0
+offset_bottom = 12.0
+theme_override_constants/outline_size = 2
+theme_override_fonts/font = ExtResource("7_ri6w6")
+theme_override_font_sizes/font_size = 16
+text = ">"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Eat" type="TouchScreenButton" parent="CanvasLayer/mobilecontrols/menuopener/lilmenus/3"]
+position = Vector2(-15, -80)
+texture_normal = ExtResource("7_ay655")
+shape = SubResource("CircleShape2D_81m0v")
+action = "eat"
+
+[node name="Label" type="Label" parent="CanvasLayer/mobilecontrols/menuopener/lilmenus/3/Eat"]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -20.0
+offset_right = 20.0
+offset_bottom = 20.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/outline_size = 2
+theme_override_fonts/font = ExtResource("7_ri6w6")
+theme_override_font_sizes/font_size = 16
+text = "Eat"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Tool" type="TouchScreenButton" parent="CanvasLayer/mobilecontrols/menuopener/lilmenus/3"]
+position = Vector2(-56, -56)
+texture_normal = ExtResource("7_ay655")
+shape = SubResource("CircleShape2D_81m0v")
+action = "use"
+
+[node name="Label" type="Label" parent="CanvasLayer/mobilecontrols/menuopener/lilmenus/3/Tool"]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -20.0
+offset_right = 20.0
+offset_bottom = 20.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/outline_size = 2
+theme_override_fonts/font = ExtResource("7_ri6w6")
+theme_override_font_sizes/font_size = 16
+text = "Tool"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Quaff" type="TouchScreenButton" parent="CanvasLayer/mobilecontrols/menuopener/lilmenus/3"]
+position = Vector2(26, -56)
+texture_normal = ExtResource("7_ay655")
+shape = SubResource("CircleShape2D_81m0v")
+
+[node name="Label" type="Label" parent="CanvasLayer/mobilecontrols/menuopener/lilmenus/3/Quaff"]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -20.0
+offset_right = 20.0
+offset_bottom = 20.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/outline_size = 2
+theme_override_fonts/font = ExtResource("7_ri6w6")
+theme_override_font_sizes/font_size = 16
+text = "Quaff"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="LEFT" type="TouchScreenButton" parent="CanvasLayer/mobilecontrols/menuopener/lilmenus/3"]
+position = Vector2(-80, -15)
+texture_normal = ExtResource("6_wljsu")
+shape = SubResource("CircleShape2D_81m0v")
+action = "sc2"
+
+[node name="Label" type="Label" parent="CanvasLayer/mobilecontrols/menuopener/lilmenus/3/LEFT"]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -20.0
+offset_right = 20.0
+offset_bottom = 20.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/outline_size = 2
+theme_override_fonts/font = ExtResource("7_ri6w6")
+theme_override_font_sizes/font_size = 16
+text = "*"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Dig" type="TouchScreenButton" parent="CanvasLayer/mobilecontrols/menuopener/lilmenus/3"]
+position = Vector2(50, -15)
+texture_normal = ExtResource("7_ay655")
+shape = SubResource("CircleShape2D_81m0v")
+
+[node name="Label" type="Label" parent="CanvasLayer/mobilecontrols/menuopener/lilmenus/3/Dig"]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -20.0
+offset_right = 20.0
+offset_bottom = 20.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/outline_size = 2
+theme_override_fonts/font = ExtResource("7_ri6w6")
+theme_override_font_sizes/font_size = 16
+text = "Dig"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Read" type="TouchScreenButton" parent="CanvasLayer/mobilecontrols/menuopener/lilmenus/3"]
+position = Vector2(-56, 26)
+texture_normal = ExtResource("7_ay655")
+shape = SubResource("CircleShape2D_81m0v")
+
+[node name="Label" type="Label" parent="CanvasLayer/mobilecontrols/menuopener/lilmenus/3/Read"]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -21.0
+offset_top = -21.0
+offset_right = 23.0
+offset_bottom = 22.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/outline_size = 2
+theme_override_fonts/font = ExtResource("7_ri6w6")
+theme_override_font_sizes/font_size = 16
+text = "Read"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Blend" type="TouchScreenButton" parent="CanvasLayer/mobilecontrols/menuopener/lilmenus/3"]
+position = Vector2(26, 26)
+texture_normal = ExtResource("7_ay655")
+shape = SubResource("CircleShape2D_81m0v")
+
+[node name="Label" type="Label" parent="CanvasLayer/mobilecontrols/menuopener/lilmenus/3/Blend"]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -20.0
+offset_right = 20.0
+offset_bottom = 20.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/outline_size = 2
+theme_override_fonts/font = ExtResource("7_ri6w6")
+theme_override_font_sizes/font_size = 16
+text = "Blend"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Examine" type="TouchScreenButton" parent="CanvasLayer/mobilecontrols/menuopener/lilmenus/3"]
+position = Vector2(-15, 50)
+texture_normal = ExtResource("7_ay655")
+shape = SubResource("CircleShape2D_81m0v")
+
+[node name="Label" type="Label" parent="CanvasLayer/mobilecontrols/menuopener/lilmenus/3/Examine"]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -20.0
+offset_right = 20.0
+offset_bottom = 20.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/outline_size = 2
+theme_override_fonts/font = ExtResource("7_ri6w6")
+theme_override_font_sizes/font_size = 16
+text = "Examine"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Control" type="Control" parent="CanvasLayer/mobilecontrols"]
+visible = false
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="TouchScreenButton" type="TouchScreenButton" parent="CanvasLayer/mobilecontrols/Control"]
+position = Vector2(77, 403)
+shape = SubResource("CircleShape2D_15b5i")
+
+[node name="Panel" type="Panel" parent="CanvasLayer/mobilecontrols/Control/TouchScreenButton"]
+offset_left = -12.0
+offset_top = -12.0
+offset_right = 12.0
+offset_bottom = 12.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_jp4wq")
+
+[node name="Label" type="Label" parent="CanvasLayer/mobilecontrols/Control/TouchScreenButton/Panel"]
+layout_mode = 0
+offset_left = -3.0
+offset_top = 5.0
+offset_right = 29.0
+offset_bottom = 21.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("7_ri6w6")
+theme_override_font_sizes/font_size = 9
+text = "[enter]"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="TouchScreenButton2" type="TouchScreenButton" parent="CanvasLayer/mobilecontrols/Control"]
+position = Vector2(118, 362)
+shape = SubResource("CircleShape2D_15b5i")
+
+[node name="Panel" type="Panel" parent="CanvasLayer/mobilecontrols/Control/TouchScreenButton2"]
+offset_left = -12.0
+offset_top = -12.0
+offset_right = 12.0
+offset_bottom = 12.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_jp4wq")
+
+[node name="Label" type="Label" parent="CanvasLayer/mobilecontrols/Control/TouchScreenButton2/Panel"]
+layout_mode = 0
+offset_left = -4.0
+offset_top = 4.0
+offset_right = 28.0
+offset_bottom = 20.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("7_ri6w6")
+theme_override_font_sizes/font_size = 11
+text = "[get]"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position_smoothing_enabled = true
+position_smoothing_speed = 4.0
+
+[node name="World" type="Node2D" parent="."]
+
+[connection signal="finished" from="audio_bg" to="." method="_on_audio_bg_finished"]
+[connection signal="pressed" from="cl/Control/togglemenus/Cook/half2/cooknow/touch" to="." method="_on_cooknow_pressed"]

@@ -1,0 +1,1425 @@
+[gd_scene load_steps=77 format=3 uid="uid://w3j21j1yeacj"]
+
+[ext_resource type="Script" path="res://nodes/menus/characreation/characrreation.gd" id="1_8jufy"]
+[ext_resource type="Texture2D" uid="uid://ciy4khs0uqwbx" path="res://graphic/void.bmp" id="1_xwass"]
+[ext_resource type="Texture2D" uid="uid://c1gvcvm06fhja" path="res://graphic/interface_1.png" id="2_6sult"]
+[ext_resource type="FontFile" uid="uid://bbwe76sp3lqcn" path="res://GNU Unifont.ttf" id="4_mck7r"]
+[ext_resource type="StyleBox" uid="uid://cojxkdqeh32hw" path="res://nodes/menus/mainmenu/new_style_box_flat.tres" id="4_nxu5x"]
+[ext_resource type="Texture2D" uid="uid://6qlc3vldrq8y" path="res://graphic/icons/dummy16x16.tres" id="6_7x807"]
+[ext_resource type="SpriteFrames" uid="uid://cpb03x3yeh6nr" path="res://nodes/humanoid/bodies/F_E_0.tres" id="7_gvenx"]
+[ext_resource type="Texture2D" uid="uid://nsw7x007wo0c" path="res://graphic/interface_sidebutton.png" id="7_nvdym"]
+[ext_resource type="Texture2D" uid="uid://ng803ga25ukc" path="res://graphic/PCCs/EyeBase_0.png" id="8_vt6s6"]
+[ext_resource type="SpriteFrames" uid="uid://cseqt4bqetk8y" path="res://nodes/humanoid/hairs/0_6.tres" id="9_hp3if"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_m2uti"]
+bg_color = Color(0.174106, 0.0759126, 0.0154366, 1)
+border_width_left = 4
+border_width_top = 4
+border_width_right = 4
+border_width_bottom = 4
+border_color = Color(0.730913, 0.730913, 0.730913, 1)
+expand_margin_left = 8.0
+expand_margin_top = 4.0
+expand_margin_right = 8.0
+expand_margin_bottom = 4.0
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_qsxd1"]
+bg_color = Color(0.174106, 0.0759126, 0.0154366, 1)
+border_width_bottom = 4
+border_color = Color(0.968627, 0.905882, 0.768627, 1)
+expand_margin_left = 8.0
+expand_margin_top = 4.0
+expand_margin_right = 8.0
+expand_margin_bottom = 4.0
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_l18f5"]
+bg_color = Color(0, 0, 0, 1)
+border_width_top = 1
+border_color = Color(0, 0, 0, 1)
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_cgwji"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_o3mld"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_qc4iu"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_qi6bh"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_04qbu"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_2odlq"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_7sui5"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_j5o1o"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_oaex3"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_bfwws"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_wybte"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_jnlcw"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_tn08w"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_8u3xy"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_d6h5w"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_7yg3f"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_n5hbf"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_m3r8j"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_pi2v5"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_bpj2j"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_qa8ej"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_i2gdo"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_3jska"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_1ghgc"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_3iwdu"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_jwac7"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ihfbv"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_srqgw"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ni233"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_chwdg"]
+
+[sub_resource type="Gradient" id="Gradient_eum0d"]
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_bvi31"]
+gradient = SubResource("Gradient_eum0d")
+width = 16
+height = 16
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_l2x6o"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_wxjg8"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_bwf5f"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_p0r20"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_q76lo"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_py07c"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_5s0tu"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_lxcxi"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_6dr6m"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_rw4o7"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_h53d5"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_wcidr"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_1173g"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_lo6t4"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_opx8h"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_rvx3x"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_6fuq5"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_qodmr"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_esmra"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_mo5a3"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_jmf8u"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_r7jjq"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_4eije"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_6npvy"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_2uk0p"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_p8y3t"]
+bg_color = Color(0.172549, 0.0745098, 0.0156863, 1)
+border_width_left = 4
+border_width_top = 4
+border_width_right = 4
+border_width_bottom = 4
+border_color = Color(0.729412, 0.729412, 0.729412, 1)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_tirqx"]
+atlas = ExtResource("8_vt6s6")
+region = Rect2(0, 0, 32, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_rl743"]
+atlas = ExtResource("8_vt6s6")
+region = Rect2(32, 0, 32, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_1gcvm"]
+atlas = ExtResource("8_vt6s6")
+region = Rect2(64, 0, 32, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_6j4hc"]
+atlas = ExtResource("8_vt6s6")
+region = Rect2(96, 0, 32, 48)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_q5cpo"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_tirqx")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_rl743")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_1gcvm")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_6j4hc")
+}],
+"loop": true,
+"name": &"WALK_DOWN",
+"speed": 4.0
+}]
+
+[node name="characrreation" type="Control"]
+texture_filter = 1
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_8jufy")
+
+[node name="bg" type="TextureRect" parent="."]
+z_index = -2
+layout_mode = 0
+offset_right = 1200.0
+offset_bottom = 900.0
+mouse_filter = 2
+texture = ExtResource("1_xwass")
+
+[node name="alias" type="TextureRect" parent="."]
+visible = false
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -150.0
+offset_top = -200.0
+offset_right = 150.0
+offset_bottom = 200.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_6sult")
+
+[node name="Title" type="Label" parent="alias"]
+layout_mode = 0
+offset_left = 48.0
+offset_right = 184.0
+offset_bottom = 24.0
+theme_override_fonts/font = ExtResource("4_mck7r")
+theme_override_font_sizes/font_size = 16
+theme_override_styles/normal = SubResource("StyleBoxFlat_m2uti")
+text = "Alias Selection"
+horizontal_alignment = 1
+
+[node name="Prompt" type="Label" parent="alias"]
+layout_mode = 0
+offset_left = -214.0
+offset_top = -64.0
+offset_right = -54.0
+offset_bottom = -40.0
+theme_override_fonts/font = ExtResource("4_mck7r")
+theme_override_font_sizes/font_size = 16
+theme_override_styles/normal = SubResource("StyleBoxFlat_qsxd1")
+text = "Choose your Alias."
+horizontal_alignment = 1
+
+[node name="Label" type="Label" parent="alias"]
+layout_mode = 0
+offset_left = 48.0
+offset_top = 36.0
+offset_right = 118.0
+offset_bottom = 51.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("4_mck7r")
+theme_override_font_sizes/font_size = 14
+text = "Alias List"
+
+[node name="HSeparator" type="HSeparator" parent="alias/Label"]
+layout_mode = 0
+offset_top = 15.0
+offset_right = 84.0
+offset_bottom = 19.0
+theme_override_styles/separator = SubResource("StyleBoxFlat_l18f5")
+
+[node name="choices" type="ItemList" parent="alias"]
+layout_mode = 0
+offset_left = 48.0
+offset_top = 60.0
+offset_right = 252.0
+offset_bottom = 372.0
+theme_override_colors/font_selected_color = Color(0, 0, 0, 1)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hovered_color = Color(0, 0, 0, 1)
+theme_override_constants/v_separation = 1
+theme_override_fonts/font = ExtResource("4_mck7r")
+theme_override_font_sizes/font_size = 16
+theme_override_styles/focus = SubResource("StyleBoxEmpty_cgwji")
+theme_override_styles/panel = SubResource("StyleBoxEmpty_o3mld")
+theme_override_styles/hovered = SubResource("StyleBoxEmpty_qc4iu")
+theme_override_styles/selected = ExtResource("4_nxu5x")
+theme_override_styles/selected_focus = ExtResource("4_nxu5x")
+theme_override_styles/cursor_unfocused = SubResource("StyleBoxEmpty_qi6bh")
+theme_override_styles/cursor = SubResource("StyleBoxEmpty_04qbu")
+item_count = 17
+item_0/text = "Reroll"
+item_1/text = "1"
+item_2/text = "2"
+item_3/text = "3"
+item_4/text = "4"
+item_5/text = "5"
+item_6/text = "6"
+item_7/text = "7"
+item_8/text = "8"
+item_9/text = "9"
+item_10/text = "10"
+item_11/text = "11"
+item_12/text = "12"
+item_13/text = "13"
+item_14/text = "14"
+item_15/text = "15"
+item_16/text = "16"
+
+[node name="bgshadow" type="TextureRect" parent="alias"]
+modulate = Color(0, 0, 0, 0.588235)
+z_index = -1
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -145.0
+offset_top = -195.0
+offset_right = 155.0
+offset_bottom = 205.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+texture = ExtResource("2_6sult")
+
+[node name="backstory" type="TextureRect" parent="."]
+visible = false
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -150.0
+offset_top = -150.0
+offset_right = 150.0
+offset_bottom = 150.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_6sult")
+
+[node name="Title" type="Label" parent="backstory"]
+layout_mode = 0
+offset_left = 48.0
+offset_right = 172.0
+offset_bottom = 24.0
+theme_override_fonts/font = ExtResource("4_mck7r")
+theme_override_font_sizes/font_size = 16
+theme_override_styles/normal = SubResource("StyleBoxFlat_m2uti")
+text = "Profile Reroll"
+horizontal_alignment = 1
+
+[node name="Prompt" type="Label" parent="backstory"]
+layout_mode = 0
+offset_left = -214.0
+offset_top = -114.0
+offset_right = -54.0
+offset_bottom = -90.0
+theme_override_fonts/font = ExtResource("4_mck7r")
+theme_override_font_sizes/font_size = 16
+theme_override_styles/normal = SubResource("StyleBoxFlat_qsxd1")
+text = "Can you tell me the history of you? I do not mind even if you make a secret."
+horizontal_alignment = 1
+
+[node name="choices" type="ItemList" parent="backstory"]
+layout_mode = 0
+offset_left = 24.0
+offset_top = 36.0
+offset_right = 276.0
+offset_bottom = 164.0
+theme_override_colors/font_selected_color = Color(0, 0, 0, 1)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hovered_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("4_mck7r")
+theme_override_font_sizes/font_size = 16
+theme_override_styles/focus = SubResource("StyleBoxEmpty_2odlq")
+theme_override_styles/panel = SubResource("StyleBoxEmpty_7sui5")
+theme_override_styles/hovered = SubResource("StyleBoxEmpty_j5o1o")
+theme_override_styles/selected = ExtResource("4_nxu5x")
+theme_override_styles/selected_focus = ExtResource("4_nxu5x")
+theme_override_styles/cursor_unfocused = SubResource("StyleBoxEmpty_oaex3")
+theme_override_styles/cursor = SubResource("StyleBoxEmpty_bfwws")
+item_count = 5
+item_0/text = "Proceed"
+item_1/text = "Keep Secret"
+item_2/text = "Reroll All"
+item_3/text = "Reroll First Half"
+item_4/text = "Reroll Second Half"
+
+[node name="return" type="Label" parent="backstory"]
+layout_mode = 0
+offset_left = 24.0
+offset_top = 176.0
+offset_right = 276.0
+offset_bottom = 276.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("4_mck7r")
+theme_override_font_sizes/font_size = 12
+text = "dummy"
+
+[node name="bgshadow" type="TextureRect" parent="backstory"]
+modulate = Color(0, 0, 0, 0.588235)
+z_index = -1
+layout_mode = 0
+offset_left = 5.0
+offset_top = 5.0
+offset_right = 305.0
+offset_bottom = 305.0
+mouse_filter = 2
+texture = ExtResource("2_6sult")
+
+[node name="race" type="TextureRect" parent="."]
+visible = false
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -352.0
+offset_top = -228.0
+offset_right = 352.0
+offset_bottom = 228.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_6sult")
+
+[node name="Prompt2" type="Label" parent="race"]
+layout_mode = 0
+offset_left = -12.0
+offset_top = -36.0
+offset_right = 148.0
+offset_bottom = -12.0
+theme_override_fonts/font = ExtResource("4_mck7r")
+theme_override_font_sizes/font_size = 16
+theme_override_styles/normal = SubResource("StyleBoxFlat_qsxd1")
+text = "Welcome traveler, I've been looking for you."
+horizontal_alignment = 1
+
+[node name="Title" type="Label" parent="race"]
+layout_mode = 0
+offset_left = 48.0
+offset_right = 244.0
+offset_bottom = 24.0
+theme_override_fonts/font = ExtResource("4_mck7r")
+theme_override_font_sizes/font_size = 16
+theme_override_styles/normal = SubResource("StyleBoxFlat_m2uti")
+text = "Race Selection"
+horizontal_alignment = 1
+
+[node name="Label" type="Label" parent="race"]
+layout_mode = 0
+offset_left = 48.0
+offset_top = 36.0
+offset_right = 118.0
+offset_bottom = 51.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("4_mck7r")
+theme_override_font_sizes/font_size = 14
+text = "Race"
+
+[node name="HSeparator" type="HSeparator" parent="race/Label"]
+layout_mode = 0
+offset_top = 15.0
+offset_right = 36.0
+offset_bottom = 19.0
+theme_override_styles/separator = SubResource("StyleBoxFlat_l18f5")
+
+[node name="Label2" type="Label" parent="race"]
+layout_mode = 0
+offset_left = 200.0
+offset_top = 36.0
+offset_right = 270.0
+offset_bottom = 51.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("4_mck7r")
+theme_override_font_sizes/font_size = 14
+text = "Detail"
+
+[node name="HSeparator" type="HSeparator" parent="race/Label2"]
+layout_mode = 0
+offset_top = 15.0
+offset_right = 48.0
+offset_bottom = 19.0
+theme_override_styles/separator = SubResource("StyleBoxFlat_l18f5")
+
+[node name="choices" type="ItemList" parent="race"]
+layout_mode = 0
+offset_left = 48.0
+offset_top = 60.0
+offset_right = 200.0
+offset_bottom = 396.0
+theme_override_colors/font_selected_color = Color(0, 0, 0, 1)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hovered_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("4_mck7r")
+theme_override_font_sizes/font_size = 16
+theme_override_styles/focus = SubResource("StyleBoxEmpty_wybte")
+theme_override_styles/panel = SubResource("StyleBoxEmpty_jnlcw")
+theme_override_styles/hovered = SubResource("StyleBoxEmpty_tn08w")
+theme_override_styles/selected = ExtResource("4_nxu5x")
+theme_override_styles/selected_focus = ExtResource("4_nxu5x")
+theme_override_styles/cursor_unfocused = SubResource("StyleBoxEmpty_8u3xy")
+theme_override_styles/cursor = SubResource("StyleBoxEmpty_d6h5w")
+item_count = 11
+item_0/text = "Yerles"
+item_1/text = "Eulderna"
+item_2/text = "Fairy"
+item_3/text = "Dwarf"
+item_4/text = "Juere"
+item_5/text = "Elea"
+item_6/text = "Snail"
+item_7/text = "Lich"
+item_8/text = "Goblin"
+item_9/text = "Golem"
+item_10/text = "Mutant"
+
+[node name="return1" type="Label" parent="race"]
+layout_mode = 0
+offset_left = 200.0
+offset_top = 60.0
+offset_right = 656.0
+offset_bottom = 212.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("4_mck7r")
+theme_override_font_sizes/font_size = 16
+text = "The young kingdom which worships the ancient scientific civilization called Eyth Terre has gained power in the west.
+While they are realists and materialistic, they are also adaptable to things that are beyond their comprehension if it benefits the kingdom. Yerles fit well in every class with their outstanding learning ability. They receive extra skill points with every level that they gain."
+autowrap_mode = 3
+
+[node name="bgshadow" type="TextureRect" parent="race"]
+modulate = Color(0, 0, 0, 0.588235)
+z_index = -1
+layout_mode = 0
+offset_left = 5.0
+offset_top = 5.0
+offset_right = 709.0
+offset_bottom = 461.0
+mouse_filter = 2
+texture = ExtResource("2_6sult")
+
+[node name="gender" type="TextureRect" parent="."]
+visible = false
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -123.0
+offset_top = -135.0
+offset_right = 123.0
+offset_bottom = 135.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_6sult")
+expand_mode = 1
+
+[node name="Title" type="Label" parent="gender"]
+layout_mode = 0
+offset_left = 48.0
+offset_right = 198.0
+offset_bottom = 24.0
+theme_override_fonts/font = ExtResource("4_mck7r")
+theme_override_font_sizes/font_size = 16
+theme_override_styles/normal = SubResource("StyleBoxFlat_m2uti")
+text = "Gender Selection"
+horizontal_alignment = 1
+
+[node name="Prompt" type="Label" parent="gender"]
+layout_mode = 0
+offset_left = -241.0
+offset_top = -129.0
+offset_right = -81.0
+offset_bottom = -105.0
+theme_override_fonts/font = ExtResource("4_mck7r")
+theme_override_font_sizes/font_size = 16
+theme_override_styles/normal = SubResource("StyleBoxFlat_qsxd1")
+text = "What's your gender?"
+horizontal_alignment = 1
+
+[node name="Label" type="Label" parent="gender"]
+layout_mode = 0
+offset_left = 48.0
+offset_top = 36.0
+offset_right = 118.0
+offset_bottom = 51.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("4_mck7r")
+theme_override_font_sizes/font_size = 14
+text = "Gender"
+
+[node name="HSeparator" type="HSeparator" parent="gender/Label"]
+layout_mode = 0
+offset_top = 15.0
+offset_right = 36.0
+offset_bottom = 19.0
+theme_override_styles/separator = SubResource("StyleBoxFlat_l18f5")
+
+[node name="choices" type="ItemList" parent="gender"]
+layout_mode = 0
+offset_left = 48.0
+offset_top = 72.0
+offset_right = 198.0
+offset_bottom = 222.0
+theme_override_colors/font_selected_color = Color(0, 0, 0, 1)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hovered_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("4_mck7r")
+theme_override_font_sizes/font_size = 16
+theme_override_styles/focus = SubResource("StyleBoxEmpty_7yg3f")
+theme_override_styles/panel = SubResource("StyleBoxEmpty_n5hbf")
+theme_override_styles/hovered = SubResource("StyleBoxEmpty_m3r8j")
+theme_override_styles/selected = ExtResource("4_nxu5x")
+theme_override_styles/selected_focus = ExtResource("4_nxu5x")
+theme_override_styles/cursor_unfocused = SubResource("StyleBoxEmpty_pi2v5")
+theme_override_styles/cursor = SubResource("StyleBoxEmpty_bpj2j")
+item_count = 6
+item_0/text = "Male"
+item_1/text = "Female"
+item_2/text = "Trans Male"
+item_3/text = "Trans Female"
+item_4/text = "Hermaphrodite"
+item_5/text = "Unknown"
+
+[node name="TextureRect" type="TextureRect" parent="gender"]
+modulate = Color(0, 0, 0, 0.588235)
+z_index = -1
+layout_mode = 0
+offset_left = 5.0
+offset_top = 5.0
+offset_right = 251.0
+offset_bottom = 275.0
+mouse_filter = 2
+texture = ExtResource("2_6sult")
+expand_mode = 1
+
+[node name="classes" type="TextureRect" parent="."]
+visible = false
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -352.0
+offset_top = -228.0
+offset_right = 352.0
+offset_bottom = 252.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_6sult")
+expand_mode = 1
+
+[node name="Title" type="Label" parent="classes"]
+layout_mode = 0
+offset_left = 48.0
+offset_right = 244.0
+offset_bottom = 24.0
+theme_override_fonts/font = ExtResource("4_mck7r")
+theme_override_font_sizes/font_size = 16
+theme_override_styles/normal = SubResource("StyleBoxFlat_m2uti")
+text = "Class Selection"
+horizontal_alignment = 1
+
+[node name="Prompt" type="Label" parent="classes"]
+layout_mode = 0
+offset_left = -12.0
+offset_top = -36.0
+offset_right = 564.0
+offset_bottom = -12.0
+theme_override_fonts/font = ExtResource("4_mck7r")
+theme_override_font_sizes/font_size = 16
+theme_override_styles/normal = SubResource("StyleBoxFlat_qsxd1")
+text = "Your class and race determine growth rate of your skills and attributes."
+horizontal_alignment = 1
+
+[node name="Label" type="Label" parent="classes"]
+layout_mode = 0
+offset_left = 48.0
+offset_top = 36.0
+offset_right = 96.0
+offset_bottom = 51.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("4_mck7r")
+theme_override_font_sizes/font_size = 14
+text = "Class"
+
+[node name="HSeparator" type="HSeparator" parent="classes/Label"]
+layout_mode = 0
+offset_top = 15.0
+offset_right = 48.0
+offset_bottom = 19.0
+theme_override_styles/separator = SubResource("StyleBoxFlat_l18f5")
+
+[node name="Label2" type="Label" parent="classes"]
+layout_mode = 0
+offset_left = 248.0
+offset_top = 36.0
+offset_right = 296.0
+offset_bottom = 51.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("4_mck7r")
+theme_override_font_sizes/font_size = 14
+text = "Detail"
+
+[node name="HSeparator" type="HSeparator" parent="classes/Label2"]
+layout_mode = 0
+offset_top = 15.0
+offset_right = 48.0
+offset_bottom = 19.0
+theme_override_styles/separator = SubResource("StyleBoxFlat_l18f5")
+
+[node name="choices" type="ItemList" parent="classes"]
+layout_mode = 0
+offset_left = 48.0
+offset_top = 60.0
+offset_right = 200.0
+offset_bottom = 438.0
+theme_override_colors/font_selected_color = Color(0, 0, 0, 1)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hovered_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("4_mck7r")
+theme_override_font_sizes/font_size = 16
+theme_override_styles/focus = SubResource("StyleBoxEmpty_qa8ej")
+theme_override_styles/panel = SubResource("StyleBoxEmpty_i2gdo")
+theme_override_styles/hovered = SubResource("StyleBoxEmpty_3jska")
+theme_override_styles/selected = ExtResource("4_nxu5x")
+theme_override_styles/selected_focus = ExtResource("4_nxu5x")
+theme_override_styles/cursor_unfocused = SubResource("StyleBoxEmpty_1ghgc")
+theme_override_styles/cursor = SubResource("StyleBoxEmpty_3iwdu")
+
+[node name="return1" type="Label" parent="classes"]
+layout_mode = 0
+offset_left = 248.0
+offset_top = 60.0
+offset_right = 656.0
+offset_bottom = 438.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_constants/line_spacing = 1
+theme_override_fonts/font = ExtResource("4_mck7r")
+theme_override_font_sizes/font_size = 16
+autowrap_mode = 3
+
+[node name="bgshadow" type="TextureRect" parent="classes"]
+modulate = Color(0, 0, 0, 0.588235)
+z_index = -1
+layout_mode = 0
+offset_left = 5.0
+offset_top = 5.0
+offset_right = 709.0
+offset_bottom = 485.0
+mouse_filter = 2
+texture = ExtResource("2_6sult")
+
+[node name="skill" type="TextureRect" parent="."]
+visible = false
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -340.0
+offset_top = -240.0
+offset_right = 340.0
+offset_bottom = 240.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_6sult")
+
+[node name="Prompt" type="Label" parent="skill"]
+layout_mode = 0
+offset_left = -24.0
+offset_top = -24.0
+offset_right = 367.0
+theme_override_fonts/font = ExtResource("4_mck7r")
+theme_override_font_sizes/font_size = 16
+theme_override_styles/normal = SubResource("StyleBoxFlat_qsxd1")
+text = "I want you to tell me one of your notable skill."
+horizontal_alignment = 1
+
+[node name="Label2" type="Label" parent="skill"]
+layout_mode = 0
+offset_left = 48.0
+offset_top = 72.0
+offset_right = 88.0
+offset_bottom = 88.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("4_mck7r")
+theme_override_font_sizes/font_size = 16
+text = "Name"
+
+[node name="Label3" type="Label" parent="skill"]
+layout_mode = 0
+offset_left = 292.0
+offset_top = 72.0
+offset_right = 332.0
+offset_bottom = 88.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("4_mck7r")
+theme_override_font_sizes/font_size = 16
+text = "Details"
+
+[node name="Label" type="Label" parent="skill"]
+layout_mode = 0
+offset_left = 80.0
+offset_top = 104.0
+offset_right = 120.0
+offset_bottom = 118.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("4_mck7r")
+theme_override_font_sizes/font_size = 13
+text = "Skill"
+
+[node name="choices" type="ItemList" parent="skill"]
+layout_mode = 0
+offset_left = 48.0
+offset_top = 120.0
+offset_right = 268.0
+offset_bottom = 456.0
+theme_override_colors/font_selected_color = Color(0, 0, 0, 1)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hovered_color = Color(0, 0, 0, 1)
+theme_override_constants/icon_margin = 8
+theme_override_fonts/font = ExtResource("4_mck7r")
+theme_override_font_sizes/font_size = 16
+theme_override_styles/focus = SubResource("StyleBoxEmpty_jwac7")
+theme_override_styles/panel = SubResource("StyleBoxEmpty_ihfbv")
+theme_override_styles/hovered = SubResource("StyleBoxEmpty_srqgw")
+theme_override_styles/selected = ExtResource("4_nxu5x")
+theme_override_styles/selected_focus = ExtResource("4_nxu5x")
+theme_override_styles/cursor_unfocused = SubResource("StyleBoxEmpty_ni233")
+theme_override_styles/cursor = SubResource("StyleBoxEmpty_chwdg")
+item_count = 1
+item_0/text = "dummy"
+item_0/icon = SubResource("GradientTexture2D_bvi31")
+
+[node name="return" type="ItemList" parent="skill"]
+layout_mode = 0
+offset_left = 292.0
+offset_top = 120.0
+offset_right = 656.0
+offset_bottom = 456.0
+theme_override_colors/font_selected_color = Color(0, 0, 0, 1)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hovered_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("4_mck7r")
+theme_override_font_sizes/font_size = 16
+theme_override_styles/focus = SubResource("StyleBoxEmpty_l2x6o")
+theme_override_styles/panel = SubResource("StyleBoxEmpty_wxjg8")
+theme_override_styles/hovered = SubResource("StyleBoxEmpty_bwf5f")
+theme_override_styles/selected = SubResource("StyleBoxEmpty_p0r20")
+theme_override_styles/selected_focus = SubResource("StyleBoxEmpty_q76lo")
+theme_override_styles/cursor_unfocused = SubResource("StyleBoxEmpty_py07c")
+theme_override_styles/cursor = SubResource("StyleBoxEmpty_5s0tu")
+item_count = 1
+item_0/text = "dummy"
+
+[node name="bgshadow" type="TextureRect" parent="skill"]
+modulate = Color(0, 0, 0, 0.588235)
+z_index = -1
+layout_mode = 0
+offset_left = 5.0
+offset_top = 5.0
+offset_right = 685.0
+offset_bottom = 485.0
+mouse_filter = 2
+texture = ExtResource("2_6sult")
+
+[node name="attributes" type="TextureRect" parent="."]
+visible = false
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -150.0
+offset_top = -175.0
+offset_right = 150.0
+offset_bottom = 125.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_6sult")
+
+[node name="Prompt" type="Label" parent="attributes"]
+layout_mode = 0
+offset_left = -214.0
+offset_top = -89.0
+offset_right = -54.0
+offset_bottom = -65.0
+theme_override_fonts/font = ExtResource("4_mck7r")
+theme_override_font_sizes/font_size = 16
+theme_override_styles/normal = SubResource("StyleBoxFlat_qsxd1")
+text = "You should prepare well, if you want to survive long enough in Irva."
+horizontal_alignment = 1
+
+[node name="Title" type="Label" parent="attributes"]
+layout_mode = 0
+offset_left = 48.0
+offset_right = 184.0
+offset_bottom = 24.0
+theme_override_fonts/font = ExtResource("4_mck7r")
+theme_override_font_sizes/font_size = 16
+theme_override_styles/normal = SubResource("StyleBoxFlat_m2uti")
+text = "Attribute Reroll"
+
+[node name="Label" type="Label" parent="attributes"]
+layout_mode = 0
+offset_left = 48.0
+offset_top = 36.0
+offset_right = 118.0
+offset_bottom = 51.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("4_mck7r")
+theme_override_font_sizes/font_size = 14
+text = "Attributes"
+
+[node name="HSeparator" type="HSeparator" parent="attributes/Label"]
+layout_mode = 0
+offset_top = 15.0
+offset_right = 76.0
+offset_bottom = 19.0
+theme_override_styles/separator = SubResource("StyleBoxFlat_l18f5")
+
+[node name="Label2" type="Label" parent="attributes"]
+layout_mode = 0
+offset_left = 166.0
+offset_top = 70.0
+offset_right = 257.0
+offset_bottom = 85.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("4_mck7r")
+theme_override_font_sizes/font_size = 14
+text = "Locks Left: 2"
+
+[node name="Label3" type="Label" parent="attributes"]
+layout_mode = 0
+offset_left = 166.0
+offset_top = 36.0
+offset_right = 262.0
+offset_bottom = 62.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_constants/line_spacing = 0
+theme_override_fonts/font = ExtResource("4_mck7r")
+theme_override_font_sizes/font_size = 12
+text = "Locked items will not change."
+autowrap_mode = 3
+
+[node name="choices" type="ItemList" parent="attributes"]
+layout_mode = 0
+offset_left = 48.0
+offset_top = 60.0
+offset_right = 172.0
+offset_bottom = 266.0
+theme_override_colors/font_selected_color = Color(0, 0, 0, 1)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hovered_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("4_mck7r")
+theme_override_font_sizes/font_size = 16
+theme_override_styles/focus = SubResource("StyleBoxEmpty_lxcxi")
+theme_override_styles/panel = SubResource("StyleBoxEmpty_6dr6m")
+theme_override_styles/hovered = SubResource("StyleBoxEmpty_rw4o7")
+theme_override_styles/selected = ExtResource("4_nxu5x")
+theme_override_styles/selected_focus = ExtResource("4_nxu5x")
+theme_override_styles/cursor_unfocused = SubResource("StyleBoxEmpty_h53d5")
+theme_override_styles/cursor = SubResource("StyleBoxEmpty_wcidr")
+auto_height = true
+item_count = 10
+item_0/text = "Proceed"
+item_1/text = "Reroll"
+item_2/text = "Strength"
+item_3/text = "Constitution"
+item_4/text = "Dexterity"
+item_5/text = "Perception"
+item_6/text = "Learning"
+item_7/text = "Will"
+item_8/text = "Magic"
+item_9/text = "Charisma"
+
+[node name="return" type="ItemList" parent="attributes"]
+layout_mode = 0
+offset_left = 196.0
+offset_top = 102.0
+offset_right = 260.0
+offset_bottom = 268.0
+theme_override_colors/font_selected_color = Color(0, 0, 0, 1)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hovered_color = Color(0, 0, 0, 1)
+theme_override_constants/icon_margin = 8
+theme_override_constants/v_separation = 4
+theme_override_fonts/font = ExtResource("4_mck7r")
+theme_override_font_sizes/font_size = 16
+theme_override_styles/focus = SubResource("StyleBoxEmpty_lxcxi")
+theme_override_styles/panel = SubResource("StyleBoxEmpty_6dr6m")
+theme_override_styles/hovered = SubResource("StyleBoxEmpty_rw4o7")
+theme_override_styles/selected = SubResource("StyleBoxEmpty_1173g")
+theme_override_styles/selected_focus = SubResource("StyleBoxEmpty_lo6t4")
+theme_override_styles/cursor_unfocused = SubResource("StyleBoxEmpty_h53d5")
+theme_override_styles/cursor = SubResource("StyleBoxEmpty_wcidr")
+auto_height = true
+item_count = 8
+item_0/text = "10"
+item_0/icon = ExtResource("6_7x807")
+item_1/text = "10"
+item_1/icon = ExtResource("6_7x807")
+item_2/text = "10"
+item_2/icon = ExtResource("6_7x807")
+item_3/text = "10"
+item_3/icon = ExtResource("6_7x807")
+item_4/text = "10"
+item_4/icon = ExtResource("6_7x807")
+item_5/text = "10"
+item_5/icon = ExtResource("6_7x807")
+item_6/text = "10"
+item_6/icon = ExtResource("6_7x807")
+item_7/text = "10"
+item_7/icon = ExtResource("6_7x807")
+
+[node name="bgshadow" type="TextureRect" parent="attributes"]
+modulate = Color(0, 0, 0, 0.588235)
+z_index = -1
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -145.0
+offset_top = -145.0
+offset_right = 155.0
+offset_bottom = 155.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+texture = ExtResource("2_6sult")
+
+[node name="Prompt" type="Label" parent="."]
+visible = false
+layout_mode = 0
+offset_left = 36.0
+offset_top = 36.0
+offset_right = 196.0
+offset_bottom = 60.0
+theme_override_fonts/font = ExtResource("4_mck7r")
+theme_override_font_sizes/font_size = 16
+theme_override_styles/normal = SubResource("StyleBoxFlat_qsxd1")
+text = "What's your gender?"
+horizontal_alignment = 1
+
+[node name="feats" type="TextureRect" parent="."]
+visible = false
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -340.0
+offset_top = -240.0
+offset_right = 340.0
+offset_bottom = 240.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_6sult")
+
+[node name="Prompt" type="Label" parent="feats"]
+layout_mode = 0
+offset_left = -24.0
+offset_top = -24.0
+offset_right = 190.0
+theme_override_fonts/font = ExtResource("4_mck7r")
+theme_override_font_sizes/font_size = 16
+theme_override_styles/normal = SubResource("StyleBoxFlat_qsxd1")
+text = "Choose your feats wisely."
+horizontal_alignment = 1
+
+[node name="Label2" type="Label" parent="feats"]
+layout_mode = 0
+offset_left = 48.0
+offset_top = 72.0
+offset_right = 88.0
+offset_bottom = 88.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("4_mck7r")
+theme_override_font_sizes/font_size = 16
+text = "Name"
+
+[node name="Label3" type="Label" parent="feats"]
+layout_mode = 0
+offset_left = 292.0
+offset_top = 72.0
+offset_right = 332.0
+offset_bottom = 88.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("4_mck7r")
+theme_override_font_sizes/font_size = 16
+text = "Details"
+
+[node name="Label" type="Label" parent="feats"]
+layout_mode = 0
+offset_left = 80.0
+offset_top = 104.0
+offset_right = 178.0
+offset_bottom = 118.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("4_mck7r")
+theme_override_font_sizes/font_size = 13
+text = "Available Feats"
+
+[node name="choices" type="ItemList" parent="feats"]
+layout_mode = 0
+offset_left = 48.0
+offset_top = 120.0
+offset_right = 268.0
+offset_bottom = 456.0
+theme_override_colors/font_selected_color = Color(0, 0, 0, 1)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hovered_color = Color(0, 0, 0, 1)
+theme_override_constants/icon_margin = 8
+theme_override_fonts/font = ExtResource("4_mck7r")
+theme_override_font_sizes/font_size = 16
+theme_override_styles/focus = SubResource("StyleBoxEmpty_jwac7")
+theme_override_styles/panel = SubResource("StyleBoxEmpty_ihfbv")
+theme_override_styles/hovered = SubResource("StyleBoxEmpty_srqgw")
+theme_override_styles/selected = ExtResource("4_nxu5x")
+theme_override_styles/selected_focus = ExtResource("4_nxu5x")
+theme_override_styles/cursor_unfocused = SubResource("StyleBoxEmpty_ni233")
+theme_override_styles/cursor = SubResource("StyleBoxEmpty_chwdg")
+item_count = 1
+item_0/text = "dummy"
+item_0/icon = SubResource("GradientTexture2D_bvi31")
+
+[node name="return" type="ItemList" parent="feats"]
+layout_mode = 0
+offset_left = 292.0
+offset_top = 120.0
+offset_right = 656.0
+offset_bottom = 456.0
+theme_override_colors/font_selected_color = Color(0, 0, 0, 1)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hovered_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("4_mck7r")
+theme_override_font_sizes/font_size = 16
+theme_override_styles/focus = SubResource("StyleBoxEmpty_l2x6o")
+theme_override_styles/panel = SubResource("StyleBoxEmpty_wxjg8")
+theme_override_styles/hovered = SubResource("StyleBoxEmpty_bwf5f")
+theme_override_styles/selected = SubResource("StyleBoxEmpty_p0r20")
+theme_override_styles/selected_focus = SubResource("StyleBoxEmpty_q76lo")
+theme_override_styles/cursor_unfocused = SubResource("StyleBoxEmpty_py07c")
+theme_override_styles/cursor = SubResource("StyleBoxEmpty_5s0tu")
+item_count = 1
+item_0/text = "dummy"
+
+[node name="bgshadow" type="TextureRect" parent="feats"]
+modulate = Color(0, 0, 0, 0.588235)
+z_index = -1
+layout_mode = 0
+offset_left = 5.0
+offset_top = 5.0
+offset_right = 685.0
+offset_bottom = 485.0
+mouse_filter = 2
+texture = ExtResource("2_6sult")
+
+[node name="appearance" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -150.0
+offset_top = -175.0
+offset_right = 150.0
+offset_bottom = 125.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_6sult")
+
+[node name="Prompt" type="Label" parent="appearance"]
+layout_mode = 0
+offset_left = -214.0
+offset_top = -89.0
+offset_right = -54.0
+offset_bottom = -65.0
+theme_override_fonts/font = ExtResource("4_mck7r")
+theme_override_font_sizes/font_size = 16
+theme_override_styles/normal = SubResource("StyleBoxFlat_qsxd1")
+text = "What you look like? Don't worry, you can change them later."
+horizontal_alignment = 1
+
+[node name="Title" type="Label" parent="appearance"]
+layout_mode = 0
+offset_left = 48.0
+offset_right = 184.0
+offset_bottom = 24.0
+theme_override_fonts/font = ExtResource("4_mck7r")
+theme_override_font_sizes/font_size = 16
+theme_override_styles/normal = SubResource("StyleBoxFlat_m2uti")
+text = "Appearance"
+horizontal_alignment = 1
+
+[node name="Label" type="Label" parent="appearance"]
+layout_mode = 0
+offset_left = 48.0
+offset_top = 36.0
+offset_right = 118.0
+offset_bottom = 51.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("4_mck7r")
+theme_override_font_sizes/font_size = 14
+text = "Category"
+
+[node name="HSeparator" type="HSeparator" parent="appearance/Label"]
+layout_mode = 0
+offset_top = 15.0
+offset_right = 76.0
+offset_bottom = 19.0
+theme_override_styles/separator = SubResource("StyleBoxFlat_l18f5")
+
+[node name="FinalizeButton" type="Button" parent="appearance"]
+layout_mode = 0
+offset_left = 48.0
+offset_top = 60.0
+offset_right = 56.0
+offset_bottom = 68.0
+theme_override_colors/font_hover_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("4_mck7r")
+theme_override_font_sizes/font_size = 16
+theme_override_styles/focus = SubResource("StyleBoxEmpty_opx8h")
+theme_override_styles/disabled_mirrored = SubResource("StyleBoxEmpty_rvx3x")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_6fuq5")
+theme_override_styles/hover_pressed_mirrored = SubResource("StyleBoxEmpty_qodmr")
+theme_override_styles/hover_pressed = SubResource("StyleBoxEmpty_esmra")
+theme_override_styles/hover_mirrored = SubResource("StyleBoxEmpty_mo5a3")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_jmf8u")
+theme_override_styles/pressed_mirrored = SubResource("StyleBoxEmpty_r7jjq")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_4eije")
+theme_override_styles/normal_mirrored = SubResource("StyleBoxEmpty_6npvy")
+theme_override_styles/normal = SubResource("StyleBoxEmpty_2uk0p")
+text = "Done"
+
+[node name="app" type="VBoxContainer" parent="appearance"]
+layout_mode = 0
+offset_left = 48.0
+offset_top = 84.0
+offset_right = 184.0
+offset_bottom = 268.0
+
+[node name="skin" type="HBoxContainer" parent="appearance/app"]
+layout_mode = 2
+
+[node name="minus" type="TextureButton" parent="appearance/app/skin"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 0.5
+texture_normal = ExtResource("7_nvdym")
+stretch_mode = 3
+
+[node name="Label" type="Label" parent="appearance/app/skin"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("4_mck7r")
+theme_override_font_sizes/font_size = 16
+text = "skin"
+
+[node name="plus" type="TextureButton" parent="appearance/app/skin"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 0.5
+texture_normal = ExtResource("7_nvdym")
+stretch_mode = 3
+flip_h = true
+
+[node name="ears" type="HBoxContainer" parent="appearance/app"]
+layout_mode = 2
+
+[node name="minus" type="TextureButton" parent="appearance/app/ears"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 0.5
+texture_normal = ExtResource("7_nvdym")
+stretch_mode = 3
+
+[node name="Label" type="Label" parent="appearance/app/ears"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("4_mck7r")
+theme_override_font_sizes/font_size = 16
+text = "ears"
+
+[node name="plus" type="TextureButton" parent="appearance/app/ears"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 0.5
+texture_normal = ExtResource("7_nvdym")
+stretch_mode = 3
+flip_h = true
+
+[node name="hair" type="HBoxContainer" parent="appearance/app"]
+layout_mode = 2
+
+[node name="minus" type="TextureButton" parent="appearance/app/hair"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 0.5
+texture_normal = ExtResource("7_nvdym")
+stretch_mode = 3
+
+[node name="Label" type="Label" parent="appearance/app/hair"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("4_mck7r")
+theme_override_font_sizes/font_size = 16
+text = "hair"
+
+[node name="plus" type="TextureButton" parent="appearance/app/hair"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 0.5
+texture_normal = ExtResource("7_nvdym")
+stretch_mode = 3
+flip_h = true
+
+[node name="hairc" type="HBoxContainer" parent="appearance/app"]
+layout_mode = 2
+
+[node name="minus" type="TextureButton" parent="appearance/app/hairc"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 0.5
+texture_normal = ExtResource("7_nvdym")
+stretch_mode = 3
+
+[node name="Label" type="Label" parent="appearance/app/hairc"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("4_mck7r")
+theme_override_font_sizes/font_size = 16
+text = "hair c."
+
+[node name="plus" type="TextureButton" parent="appearance/app/hairc"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 0.5
+texture_normal = ExtResource("7_nvdym")
+stretch_mode = 3
+flip_h = true
+
+[node name="Panel" type="Panel" parent="appearance"]
+layout_mode = 1
+anchors_preset = 6
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = -117.0
+offset_top = -90.0
+offset_right = -21.0
+offset_bottom = 58.0
+grow_horizontal = 0
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_p8y3t")
+
+[node name="ani" type="AnimatedSprite2D" parent="appearance/Panel"]
+position = Vector2(48, 74)
+scale = Vector2(2, 2)
+sprite_frames = ExtResource("7_gvenx")
+animation = &"WALK_DOWN"
+
+[node name="EyeBase" type="AnimatedSprite2D" parent="appearance/Panel/ani"]
+sprite_frames = SubResource("SpriteFrames_q5cpo")
+animation = &"WALK_DOWN"
+
+[node name="Hair" type="AnimatedSprite2D" parent="appearance/Panel/ani"]
+sprite_frames = ExtResource("9_hp3if")
+animation = &"WALK_DOWN"
+
+[node name="bgshadow" type="TextureRect" parent="appearance"]
+modulate = Color(0, 0, 0, 0.588235)
+z_index = -1
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -145.0
+offset_top = -145.0
+offset_right = 155.0
+offset_bottom = 155.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+texture = ExtResource("2_6sult")
+
+[connection signal="item_clicked" from="alias/choices" to="." method="_on_alias_choices_item_clicked"]
+[connection signal="item_clicked" from="race/choices" to="." method="_on_race_choices_item_clicked"]
+[connection signal="item_clicked" from="gender/choices" to="." method="_on_gender_choices_item_clicked"]
+[connection signal="item_clicked" from="classes/choices" to="." method="_on_classes_choices_item_clicked"]
+[connection signal="item_clicked" from="skill/choices" to="." method="_on_skill_choices_item_clicked"]
+[connection signal="item_clicked" from="attributes/choices" to="." method="_on_attributes_choices_item_clicked"]
+[connection signal="item_clicked" from="feats/choices" to="." method="_on_feats_choices_item_clicked"]
+[connection signal="button_down" from="appearance/FinalizeButton" to="." method="_on_finalize_button_down"]
+[connection signal="button_down" from="appearance/app/skin/minus" to="." method="_on_skin_minus_button_down"]
+[connection signal="button_down" from="appearance/app/skin/plus" to="." method="_on_skin_plus_button_down"]
+[connection signal="button_down" from="appearance/app/ears/minus" to="." method="_on_ears_minus_button_down"]
+[connection signal="button_down" from="appearance/app/hairc/minus" to="." method="_on_hairc_minus_button_down"]
+[connection signal="button_down" from="appearance/app/hairc/plus" to="." method="_on_hairc_plus_button_down"]

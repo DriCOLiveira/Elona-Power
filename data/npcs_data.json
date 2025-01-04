@@ -1,0 +1,48 @@
+{
+	"general vendor":{
+		"title": "the General Vendor",
+		"texture": [
+			"shopkeeper_F"
+		],
+		"dialogue options": [
+			"normalchat",
+			"buyitem",
+			"sellitem",
+			"invest",
+			"exchange",
+			"bye"
+		]
+	},
+	"innkeeper":{
+		"title": "the Innkeeper",
+		"texture": [
+			"shopkeeper_F"
+		],
+		"dialogue options": [
+			"normalchat",
+			"buyitem",
+			"sellitem",
+			"invest",
+			"eatnormal",
+			"eatspecial",
+			"goshelter",
+			"exchange",
+			"bye"
+		]
+	},
+	"baker":{
+		"title": "the Baker",
+		"texture": [
+			"baker"
+		],
+		"dialogue options": [
+			"normalchat",
+			"buyitem",
+			"sellitem",
+			"invest",
+			"exchange",
+			"bye"
+		]
+	}
+
+}

@@ -1,0 +1,35 @@
+[gd_scene load_steps=5 format=3 uid="uid://g2pxvrbb3gv7"]
+
+[ext_resource type="Texture2D" uid="uid://dqcmiojdhgccc" path="res://graphic/Items/Consumables/meat.png" id="1_5g3tc"]
+[ext_resource type="Script" path="res://nodes/menus/gamemenus/recipeselect.gd" id="1_fxje5"]
+[ext_resource type="FontFile" uid="uid://bbwe76sp3lqcn" path="res://GNU Unifont.ttf" id="2_d7oww"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_2v7n3"]
+size = Vector2(240, 16)
+
+[node name="recipeselect" type="Control"]
+custom_minimum_size = Vector2(240, 16)
+layout_mode = 3
+anchors_preset = 0
+script = ExtResource("1_fxje5")
+
+[node name="icon" type="TextureRect" parent="."]
+layout_mode = 0
+offset_top = -18.0
+offset_right = 48.0
+offset_bottom = 30.0
+texture = ExtResource("1_5g3tc")
+
+[node name="label" type="Label" parent="."]
+custom_minimum_size = Vector2(0, 16)
+layout_mode = 0
+offset_left = 60.0
+offset_right = 236.0
+offset_bottom = 16.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_d7oww")
+text = "Just cook."
+
+[node name="touch" type="TouchScreenButton" parent="."]
+position = Vector2(120, 8)
+shape = SubResource("RectangleShape2D_2v7n3")

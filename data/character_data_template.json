@@ -1,0 +1,109 @@
+{
+	"NAME": "Eschato",
+	"ALIAS": "Little Bitch",
+	"RACE": "",
+	"CLASS": "Gunner",
+	"SEX": "F",
+	"PRONOUNS": "F",
+	"HEIGHT": 150,
+	"WEIGHT": 55,
+	"AGE": 14,
+	"BIRTHDATE": {
+		"YEAR": 517,
+		"MONTH": 1,
+		"DAY": 1
+	},
+	"FULLNESS": 1,
+	"COINS": {
+		"GOLD": 1234,
+		"PLATINUM": 100
+	},
+	"EXPERIENCE": {
+		"EXPERIENCE": 0,
+		"LEVEL": 1
+	},
+	"KARMA": 0,
+	"HP": {
+		"CURRENT": 50,
+		"MAXIMUM": 100
+	},
+	"MP": {
+		"CURRENT": 50,
+		"MAXIMUM": 100
+	},
+	"STAMINA": {
+		"CURRENT": 50,
+		"MAXIMUM": 100
+	},
+	"INVENTORY": {
+		"CURRENT": 50.0,
+		"MAXIMUM": 100.0
+	},
+	"RELIGION": {
+		"GOD":"Kumiromi",
+		"Favor": 5
+	},
+	"ATTRIBUTES": {
+		"STR": {
+			"ORG":28,
+			"FIN":33,
+			"POT":100.0
+		},
+		"CON": {
+			"ORG":28,
+			"FIN":33,
+			"POT":100.0
+		},
+		"DEX": {
+			"ORG":28,
+			"FIN":33,
+			"POT":100.0
+		},
+		"PER": {
+			"ORG":28,
+			"FIN":33,
+			"POT":100.0
+		},
+		"LER": {
+			"ORG":28,
+			"FIN":33,
+			"POT":100.0
+		},
+		"WIL": {
+			"ORG":28,
+			"FIN":33,
+			"POT":100.0
+		},
+		"MAG": {
+			"ORG":28,
+			"FIN":33,
+			"POT":100.0
+		},
+		"CHR": {
+			"ORG":28,
+			"FIN":33,
+			"POT":100.0
+		}
+	},
+	"COMBAT SKILLS": {},
+	"ADVENTURE SKILLS": {},
+	"BODY PARTS": [
+		10000,
+		20000,
+		30000,
+		40000,
+		50000,
+		60000,
+		70000,
+		80000,
+		90000,
+		100000,
+		110000
+	],
+	"APPEARANCE": {
+		"SKIN": 0,
+		"EARS": "E",
+		"HAIR": 0,
+		"HAIRC": 0
+	}
+}

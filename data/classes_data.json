@@ -1,0 +1,48 @@
+{
+	"Warrior": {
+		"Attributes": {
+			"STR":[5,10],
+			"CON":[5,10],
+			"DEX":[1,2],
+			"PER":[0,0],
+			"LER":[0,0],
+			"WIL":[2,3],
+			"MAG":[0,0],
+			"CHA":[0,0]
+		},
+		"Starting Equipment": {
+			[
+				{
+					"ItemName": "battle axe"
+				},
+				{
+					"ItemName": "bardish"
+				},
+				{
+					"ItemName": "halberd"
+				},
+				{
+					"ItemName": "hammer"
+				},
+				{
+					"ItemName": "claymore"
+				}
+			],
+			[],
+			[],
+			
+		}
+		
+	},
+	"Thief": "dummy",
+	"Wizard": "dummy",
+	"Farmer": "dummy",
+	"Predator": "dummy",
+	"Archer": "dummy",
+	"Warmage": "dummy",
+	"Tourist": "dummy",
+	"Pianist": "dummy",
+	"Gunner": "dummy",
+	"Priest": "dummy",
+	"Claymore": "dummy"
+}

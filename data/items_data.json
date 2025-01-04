@@ -1,0 +1,352 @@
+{
+	"academic table": {
+		"material":"none",
+		"sprite":"Furniture/academic table",
+		"y-offset": -12
+	},
+	"anvil": {
+		"material":"none",
+		"sprite": "Furniture/anvil"
+	},
+	"armor": {
+		"material":"none",
+		"sprite": "Furniture/armor",
+		"y-offset": -24
+	},
+	"bardish": {
+		"material": "none",
+		"sprite":"Equipment/Weapons/Axe/bardish",
+		"tags": [
+			"weapon"
+		]
+	},
+	"battle axe": {
+		"material": "none",
+		"sprite":"Equipment/Weapons/Axe/battle axe",
+		"tags": [
+			"weapon"
+		]
+	},
+	"bone scythe": {
+		"material": "none",
+		"sprite":"Equipment/Weapons/Scythe/bone scythe",
+		"tags": [
+			"weapon"
+		]
+	},
+	"bookshelf": {
+		"material":"none",
+		"sprite": "Furniture/bookshelf",
+		"y-offset": -24
+	},
+	"boring bed": {
+		"material":"none",
+		"sprite": "Furniture/boring bed",
+		"y-offset": -18
+	},
+	"candlestick": {
+		"material": "none",
+		"sprite":"Furniture/candlestick",
+		"y-offset": -12
+	},
+	"canvas": {
+		"material": "none",
+		"sprite":"Junk/canvas",
+		"y-offset": -12
+	},
+	"chainsaw": {
+		"material": "none",
+		"sprite":"Equipment/Weapons/Axe/chainsaw",
+		"tags": [
+			"weapon"
+		]
+	},
+	"chainsickle": {
+		"material": "none",
+		"sprite":"Equipment/Weapons/Scythe/chainsickle",
+		"tags": [
+			"weapon"
+		]
+	},
+	"claymore": {
+		"material": "none",
+		"sprite":"Equipment/Weapons/Long Sword/claymore",
+		"tags": [
+			"weapon"
+		]
+	},
+	"decorated armor": {
+		"material": "none",
+		"sprite":"Furniture/decorated armor",
+		"y-offset": -12	
+	},
+	"dining table": {
+		"material": "none",
+		"sprite":"Furniture/dining table"
+	},
+	"fleure": {
+		"material": "none",
+		"sprite":"Equipment/Weapons/Long Sword/fleure",
+		"tags": [
+			"weapon"
+		]
+	},
+	"forge": {
+		"material": "none",
+		"sprite":"Furniture/forge"
+	},
+	"furnace": {
+		"material": "none",
+		"sprite":"Furniture/furnace",
+		"y-offset": -48
+	},
+	"katana": {
+		"material": "none",
+		"sprite":"Equipment/Weapons/Long Sword/katana",
+		"tags": [
+			"weapon"
+		]
+	},
+	"kitchen": {
+		"material": "none",
+		"sprite":"Furniture/kitchen",
+		"y-offset": -24,
+		"tags": [
+			"usable", "cooking tool"
+		],
+		"misc": {
+			"Cooking Quality": 100
+		}
+	},
+	"kitchen oven": {
+		"material": "none",
+		"sprite":"Furniture/kitchen oven",
+		"y-offset": -24,
+		"tags": [
+			"usable", "cooking tool"
+		],
+		"misc": {
+			"Cooking Quality": 100
+		}
+	},
+	"kitchen sink": {
+		"material": "none",
+		"sprite":"Furniture/kitchen sink",
+		"y-offset": -24,
+		"tags": [
+			"usable", "cooking tool"
+		],
+		"misc": {
+			"Cooking Quality": 100
+		}
+	},
+	"gazania": {
+		"material": "none",
+		"sprite": "Furniture/gazania",
+		"y-offset": -12
+	},
+	"hand axe": {
+		"material": "none",
+		"sprite":"Equipment/Weapons/Axe/hand axe",
+		"tags": [
+			"weapon"
+		]
+	},
+	"lantern": {
+		"material": "none",
+		"sprite": "Furniture/lantern"
+	},
+	"lightsabre": {
+		"material": "none",
+		"sprite":"Equipment/Weapons/Long Sword/lightsabre",
+		"tags": [
+			"weapon"
+		]
+	},
+	"long sword": {
+		"material": "none",
+		"sprite":"Equipment/Weapons/Long Sword/long sword",
+		"tags": [
+			"weapon"
+		]
+	},
+	"luxury drawer": {
+		"material": "none",
+		"sprite": "Furniture/luxury drawer",
+		"y-offset": -36
+	},
+	"modern chair": {
+		"material":"none",
+		"sprite":"Furniture/modern chair"
+	},
+	"modern table": {
+		"material":"none",
+		"sprite":"Furniture/modern table"
+	},
+	"narrow dining table": {
+		"material": "none",
+		"sprite":"Furniture/narrow dining table"
+	},
+	"ragdoll": {
+		"material": "none",
+		"sprite": "Furniture/ragdoll"
+	},
+	"scissors": {
+		"material": "none",
+		"sprite":"Equipment/Weapons/Scythe/scissors",
+		"tags": [
+			"weapon"
+		]
+	},
+	"scythe": {
+		"material": "none",
+		"sprite":"Equipment/Weapons/Scythe/scythe",
+		"tags": [
+			"weapon"
+		]
+	},
+	"sickle": {
+		"material": "none",
+		"sprite":"Equipment/Weapons/Scythe/scythe",
+		"tags": [
+			"weapon"
+		]
+	},
+	"small foliage plant": {
+		"material":"none",
+		"sprite":"Furniture/small foliage plant"
+	},
+	"tomahawk": {
+		"material": "none",
+		"sprite":"Equipment/Weapons/Axe/tomahawk",
+		"tags": [
+			"weapon"
+		]
+	},
+	"toy": {
+		"material":"none",
+		"sprite":"Furniture/toy"
+	},
+	
+	"meat": {
+		"material": "raw",
+		"sprite": "Consumables/meat",
+		"food data": {
+			"Satiation": 3500
+		},
+		"tags": [
+			"force_edible",
+			"no_material_change",
+			"raw meat",
+			"generic meat"
+		]
+	},
+	"charred meat": {
+		"material": "raw",
+		"sprite": "Consumables/charred meat",
+		"food data": {
+			"Satiation": 3500
+		},
+		"tags": [
+			"force_edible",
+			"no_material_change",
+			"generic meat"
+		]
+	},
+	"grotesque meat": {
+		"material": "raw",
+		"sprite": "Consumables/grotesque meat",
+		"food data": {
+			"Satiation": 3500
+		},
+		"tags": [
+			"force_edible",
+			"no_material_change",
+			"generic meat"
+		]
+	},
+	"roast meat": {
+		"material": "raw",
+		"sprite": "Consumables/roast meat",
+		"food data": {
+			"Satiation": 3500
+		},
+		"tags": [
+			"force_edible",
+			"no_material_change",
+			"generic meat"
+		]
+	},
+	"deep fried meat": {
+		"material": "raw",
+		"sprite": "Consumables/roast meat",
+		"food data": {
+			"Satiation": 3500
+		},
+		"tags": [
+			"force_edible",
+			"no_material_change",
+			"generic meat"
+		]
+	},
+	"skewer grilled meat": {
+		"material": "raw",
+		"sprite": "Consumables/roast meat",
+		"food data": {
+			"Satiation": 3500
+		},
+		"tags": [
+			"force_edible",
+			"no_material_change",
+			"generic meat"
+		]
+	},
+	"meat croquette": {
+		"material": "raw",
+		"sprite": "Consumables/roast meat",
+		"food data": {
+			"Satiation": 3500
+		},
+		"tags": [
+			"force_edible",
+			"no_material_change",
+			"generic meat"
+		]
+	},
+	"meat hamburger": {
+		"material": "raw",
+		"sprite": "Consumables/roast meat",
+		"food data": {
+			"Satiation": 3500
+		},
+		"tags": [
+			"force_edible",
+			"no_material_change",
+			"generic meat"
+		]
+	},
+	"meat cutlet": {
+		"material": "raw",
+		"sprite": "Consumables/roast meat",
+		"food data": {
+			"Satiation": 3500
+		},
+		"tags": [
+			"force_edible",
+			"no_material_change",
+			"generic meat"
+		]
+	},
+	"meat steak": {
+		"material": "raw",
+		"sprite": "Consumables/roast meat",
+		"food data": {
+			"Satiation": 3500
+		},
+		"tags": [
+			"force_edible",
+			"no_material_change",
+			"generic meat"
+		]
+	}
+}

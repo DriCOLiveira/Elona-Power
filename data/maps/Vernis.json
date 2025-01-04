@@ -1,0 +1,326 @@
+{
+	"Map Name": "Vernis",
+	"BG Music": "",
+	"Initial Data": {
+		"Items":[
+			{
+				"coors":[1,8],
+				"name": "lantern",
+				"owner":"Vernis"
+			},
+			{
+				"coors":[3,13],
+				"name": "lantern",
+				"owner":"Vernis"			
+			},
+			{
+				"coors":[3,24],
+				"name": "lantern",
+				"owner":"Vernis"			
+			},
+			{
+				"coors":[7, 14],
+				"name": "boring bed",
+				"owner":"Vernis"
+			},
+			{
+				"coors":[8, 3],
+				"name": "boring bed",
+				"owner":"Vernis"
+			},
+			{
+				"coors":[8, 6],
+				"name": "kitchen",
+				"owner":"Vernis"
+			},
+			{
+				"coors":[8, 8],
+				"name": "modern chair",
+				"owner":"Vernis"
+			},
+			{
+				"coors":[9, 3],
+				"name": "canvas",
+				"owner":"Vernis"
+			},
+			{
+				"coors":[9, 6],
+				"name": "kitchen sink",
+				"owner":"Vernis"
+			},
+			{
+				"coors":[9, 8],
+				"name": "narrow dining table",
+				"owner":"Vernis"
+			},
+			{
+				"coors":[9, 10],
+				"name": "academic table",
+				"owner":"Vernis"
+			},
+			{
+				"coors":[9, 12],
+				"name": "dining table",
+				"owner":"Vernis"
+			},
+			{
+				"coors":[10, 3],
+				"name": "boring bed",
+				"owner":"Vernis"
+			},
+			{
+				"coors":[10, 6],
+				"name": "kitchen oven",
+				"owner":"Vernis"
+			},
+			{
+				"coors":[10, 8],
+				"name": "modern chair",
+				"owner":"Vernis"
+			},
+			{
+				"coors":[11, 10],
+				"name": "boring bed",
+				"owner":"Vernis"
+			},
+			{
+				"coors":[11, 24],
+				"name": "dining table",
+				"owner":"Vernis"
+			},
+			{
+				"coors":[11, 27],
+				"name": "boring bed",
+				"owner":"Vernis"
+			},
+			{
+				"coors":[12, 3],
+				"name": "gazania",
+				"owner":"Vernis"
+			},
+			{
+				"coors":[13, 3],
+				"name": "small foliage plant",
+				"owner":"Vernis"
+			},
+			{
+				"coors":[13, 8],
+				"name": "candlestick",
+				"owner":"Vernis"
+			},
+			{
+				"coors":[13, 10],
+				"name": "armor",
+				"owner":"Vernis"
+			},
+			{
+				"coors":[13, 14],
+				"name": "forge",
+				"owner":"Vernis"
+			},
+			{
+				"coors":[14, 14],
+				"name": "decorated armor",
+				"owner":"Vernis"
+			},
+			{
+				"coors":[15, 14],
+				"name": "anvil",
+				"owner":"Vernis"
+			},
+			{
+				"coors":[14, 10],
+				"name": "furnace",
+				"owner":"Vernis"
+			},
+			{
+				"coors":[15, 10],
+				"name": "armor",
+				"owner":"Vernis"
+			},
+			{
+				"coors":[15, 27],
+				"name": "boring bed",
+				"owner":"Vernis"
+			},
+			{
+				"coors":[18, 27],
+				"name": "boring bed",
+				"owner":"Vernis"
+			},
+			{
+				"coors":[21,12],
+				"name": "lantern",
+				"owner":"Vernis"			
+			},
+			{
+				"coors":[21,18],
+				"name": "lantern",
+				"owner":"Vernis"				
+			},
+			{
+				"coors":[23,4],
+				"name": "ragdoll",
+				"owner":"Vernis"				
+			},
+			{
+				"coors":[23,6],
+				"name": "ragdoll",
+				"owner":"Vernis"				
+			},
+			{
+				"coors":[24,4],
+				"name": "toy",
+				"owner":"Vernis"				
+			},
+			{
+				"coors":[24,6],
+				"name": "ragdoll",
+				"owner":"Vernis"				
+			},
+			{
+				"coors":[25,4],
+				"name": "ragdoll",
+				"owner":"Vernis"				
+			},
+			{
+				"coors":[25,6],
+				"name": "toy",
+				"owner":"Vernis"				
+			},
+			{
+				"coors":[26,4],
+				"name": "luxury drawer",
+				"owner":"Vernis"
+			},
+			{
+				"coors":[27,4],
+				"name": "bookshelf",
+				"owner":"Vernis"				
+			},
+			{
+				"coors":[26,6],
+				"name": "toy",
+				"owner":"Vernis"				
+			},
+			{
+				"coors":[27, 5],
+				"name": "boring bed",
+				"owner":"Vernis"
+			},
+			{
+				"coors":[27,6],
+				"name": "ragdoll",
+				"owner":"Vernis"				
+			},
+			{
+				"coors":[30, 3],
+				"name": "boring bed",
+				"owner":"Vernis"
+			},
+			{
+				"coors":[31, 5],
+				"name": "dining table",
+				"owner":"Vernis"
+			},
+			{
+				"coors":[33, 8],
+				"name": "boring bed",
+				"owner":"Vernis"
+			},
+			{
+				"coors":[34,26],
+				"name": "lantern",
+				"owner":"Vernis"			
+			},
+			{
+				"coors":[38, 24],
+				"name": "modern chair",
+				"owner":"Vernis"
+			},
+			{
+				"coors":[39, 24],
+				"name": "modern table",
+				"owner":"Vernis"
+			},
+			{
+				"coors":[39, 25],
+				"name": "modern chair",
+				"owner":"Vernis"
+			},
+			{
+				"coors":[39, 27],
+				"name": "modern chair",
+				"owner":"Vernis"
+			},
+			{
+				"coors":[40, 27],
+				"name": "modern table",
+				"owner":"Vernis"
+			},
+			{
+				"coors":[41,7],
+				"name": "lantern",
+				"owner":"Vernis"			
+			},
+			{
+				"coors":[41, 25],
+				"name": "modern chair",
+				"owner":"Vernis"
+			},
+			{
+				"coors":[41, 27],
+				"name": "modern chair",
+				"owner":"Vernis"
+			},
+			{
+				"coors":[42, 25],
+				"name": "modern table",
+				"owner":"Vernis"
+			},
+			{
+				"coors":[44,14],
+				"name": "lantern",
+				"owner":"Vernis"			
+			},
+		],
+		"NPCs":[
+			{
+				"coors":[10,16],
+				"type":"general vendor"
+			},
+			{
+				"coors":[14,12],
+				"type":"general vendor"
+			},
+			{
+				"coors":[14,24],
+				"type":"innkeeper"
+			},
+			{
+				"coors":[22,25],
+				"type":"baker"
+			}
+		]
+	},
+	"NPC Dialogue": [
+		"Welcome to Vernis!",
+		"The mines around Vernis have brought a lot of money into our small community.  We are thriving thanks to the mines!",
+		"Vernis may just be a coal mining town, but we have a long and notable history.",
+		"If I were you, I wouldn't dare play the piano in the bar while Loyter is hanging out in there.  Don't say I didn't warn you.",
+		"We're caught in the crossfire of the war between the Yerles and the Eulderna for some time now.",
+		"Rumor has it that something of great value has been found in Lesimas.",
+		"It seems there is a way to obtain new skills. See the trainer to the east of the town center.",
+		"Be careful about carrying too much stuff.  You should sell off anything you don't actually need.",
+		"That weirdo near the graveyard? Don't pay any attention to that bum. He's a hopeless junkie and I'm pretty sure he's an alcoholic too.",
+		"Miches is nuts about stuffed animals.  She's completely obsessed with collecting them.",
+		"The road to the east leads to the capital city of Palmia.",
+		"You could bounce a quarter off of Shena's ass.  How does she stay in such great shape?",
+		"We've had a lot of trouble with thieves recently.",
+		"The people in that live in the Cyber Dome are so strange.  What a bunch of freaks!",
+		"Vernis is the only known source of coal in the entirety of North Tyris.  We're making a killing.",
+		"You're going to Palmia?  Just follow the road to the east.",
+		"Everyone loves Shena's ass.",
+		"Rogue attacks are becoming more frequent these days."
+	]
+}

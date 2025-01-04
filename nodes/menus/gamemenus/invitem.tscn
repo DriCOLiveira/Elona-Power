@@ -1,0 +1,56 @@
+[gd_scene load_steps=6 format=3 uid="uid://dicruifx3c5id"]
+
+[ext_resource type="FontFile" uid="uid://bbwe76sp3lqcn" path="res://GNU Unifont.ttf" id="1_g0div"]
+[ext_resource type="Script" path="res://nodes/menus/gamemenus/invitem.gd" id="1_keq1f"]
+
+[sub_resource type="Gradient" id="Gradient_7voar"]
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_6jrtk"]
+gradient = SubResource("Gradient_7voar")
+width = 48
+height = 48
+fill_from = Vector2(0.580275, 0.438073)
+fill_to = Vector2(0.655963, 0.550459)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_x3aog"]
+size = Vector2(576, 24)
+
+[node name="item" type="Control"]
+custom_minimum_size = Vector2(576, 24)
+layout_mode = 3
+anchors_preset = 0
+script = ExtResource("1_keq1f")
+
+[node name="icon" type="TextureRect" parent="."]
+custom_minimum_size = Vector2(48, 48)
+layout_mode = 0
+offset_top = -12.0
+offset_right = 48.0
+offset_bottom = 36.0
+mouse_filter = 2
+texture = SubResource("GradientTexture2D_6jrtk")
+
+[node name="name" type="Label" parent="."]
+layout_mode = 0
+offset_left = 64.0
+offset_right = 128.0
+offset_bottom = 24.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("1_g0div")
+text = "dummy!"
+vertical_alignment = 1
+
+[node name="weight" type="Label" parent="."]
+layout_mode = 0
+offset_left = 480.0
+offset_right = 576.0
+offset_bottom = 24.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("1_g0div")
+text = "10.0s"
+horizontal_alignment = 2
+vertical_alignment = 1
+
+[node name="touch" type="TouchScreenButton" parent="."]
+position = Vector2(288, 12)
+shape = SubResource("RectangleShape2D_x3aog")

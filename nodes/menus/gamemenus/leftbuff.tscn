@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=3 uid="uid://dlg8rnu4pnti8"]
+
+[ext_resource type="FontFile" uid="uid://bbwe76sp3lqcn" path="res://GNU Unifont.ttf" id="1_rhrdc"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_mddah"]
+content_margin_left = 4.0
+content_margin_top = 4.0
+content_margin_right = 4.0
+content_margin_bottom = 4.0
+bg_color = Color(1, 1, 1, 1)
+
+[node name="leftbuff" type="Label"]
+custom_minimum_size = Vector2(0, 24)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("1_rhrdc")
+theme_override_styles/normal = SubResource("StyleBoxFlat_mddah")
+text = "Burden!"

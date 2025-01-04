@@ -1,0 +1,23 @@
+{
+	"roasted meat" : {
+		"Recipe Name": "Roasted Meat",
+		"Recipe Icon": "Consumables/roasted meat",
+		"Recipe Requirements": [
+			{
+				"Item Show": "any raw meat",
+				"Item Tag": "raw meat"
+			}
+		],
+		"Results": [
+			"grotesque meat",
+			"charred meat",
+			"roast meat",
+			"roast meat",
+			"roast meat",
+			"roast meat",
+			"roast meat",
+			"roast meat",
+			"roast meat"
+		]
+	}
+}

@@ -1,0 +1,18 @@
+[gd_scene load_steps=4 format=3 uid="uid://33l52mbi3nnw"]
+
+[ext_resource type="Texture2D" uid="uid://chlfu44umpfeg" path="res://graphic/Items/Furniture/boring bed.png" id="1_gu7rt"]
+[ext_resource type="Script" path="res://nodes/items/item_48.gd" id="2_kbedi"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_klt0t"]
+radius = 12.0
+
+[node name="item48" type="Sprite2D"]
+texture = ExtResource("1_gu7rt")
+script = ExtResource("2_kbedi")
+
+[node name="Area2D" type="Area2D" parent="."]
+collision_layer = 2
+collision_mask = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource("CircleShape2D_klt0t")

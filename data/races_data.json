@@ -1,0 +1,126 @@
+{
+	"Yerles": {
+		"description": "The young kingdom which worships the ancient scientific civilization called Eyth Terre has gained power in the west. While they are realists and materialistic, they are also adaptable to things that are beyond their comprehension if it benefits the kingdom. Yerles fit well in every class with their outstanding learning ability. They receive extra skill points with every level that they gain.",
+		"combat skills": [
+			"Martial Arts",
+			"Firearm",
+			"Throwing"
+		],
+		"adventure skills": [
+			"Literacy",
+			"Negotiation"
+		],
+		"appearance": {
+			"ears": ["R"],
+			"skin": [0,1,2]
+		}
+	},
+	"Eulderna": {
+		"description": "Eulderna is one of the most ancient races in Sierra Terre. Egoism and elitism dominate every thought behind actions of these perfectionists. They, are suitable to caster or hybrid classes as they are adept at magics and using magical devices. Euldernas have resistance to magic.",
+		"combat skills": [
+			"Martial Arts"
+		],
+		"adventure skills": [
+			"Literacy",
+			"Investing",
+			"Casting",
+			"Magic Device"
+		],
+		"appearance": {
+			"ears": ["R"],
+			"skin": [0,1,2]
+		}
+	},
+	"Fairy": {
+		"description": "Fairies are cute, mysterious, and fragile. Compared to the human race, they are gifted with superior skills of using magic and evading. In contrast, the lack of physical power makes it difficult for them to carry even the smallest of things, making it impossible for them to wear equipment weighing over 2s. Fairies have outstanding resistances to all elements.",
+		"combat skills": [
+			"Martial Arts"
+		],
+		"adventure skills": [
+			"Light Armor",
+			"Casting",
+			"Cooking",
+			"Pickpocket"
+		],
+		"appearance": {
+			"ears": ["E"],
+			"skin": [0,1,2,6]
+		}
+	},
+	"Dwarf": {
+		"description": "A Dwarf is a child of the earth. As tough and unyielding as the mountains they love, most Dwarves will live their whole lives mining, smelting, and smithing. Some few leave the depths to become adventurers, hoping to make enough coin to start their own clan. Good with technology, and tough against things dark and poisonous.",
+		"combat skills": [
+			"Martial Arts"
+		],
+		"adventure skills": [
+			"Mining",
+			"Jeweler",
+			"Gardening",
+			"Cooking"
+		],
+		"appearance": {
+			"ears": ["E"],
+			"skin": [0,1,2,8,9]
+		}
+	},
+	"Juere": {
+		"description": "The Juere are a people wild and free. Scorning the 'weaker' laws of others before ever moving onwards. Their pride makes them great performers, and are strong against hunger. Nimble of hand, and Bold of character, no two Juere are ever the same.",
+		"combat skills": [
+			"Martial Arts",
+			"Throwing"
+		],
+		"adventure skills": [
+			"Negotiation",
+			"Lockpicking",
+			"Performer"
+		],
+		"appearance": {
+			"ears": ["R"],
+			"skin": [0,1,2]
+		}
+	},
+	"Elea": {
+		"description": "Elea, known by the other peoples of the world as 'Elves', live quietly in their forests, far from man. Nimble and graceful, their bows are of legend, and their wizards have forgotten more of magic than many will ever know. Still, the young ones from time to time leave and go on adventures, if only to fill their memories for their long lives.",
+		"combat skills": [
+			"Martial Arts"
+		],
+		"adventure skills": [
+			"Magic Capacity",
+			"Memorization",
+			"Casting",
+			"Cooking"
+		],
+		"appearance": {
+			"ears": ["E"],
+			"skin": [0,1,2]
+		}
+	},
+	"Snail": {
+		"description": "Despite the fears that one day the rats will inherit the World, thanks to the Etherwind it seems the snails have gotten a head start. Slow and dull, even the mightiest among them fears salt, garlic, and butter. Still for those seeking a true challenge, one can hardly do worse than being a snail. Can you imagine the looks of others when you inch ever slowly towards them?",
+		"combat skills": [
+			"Martial Arts",
+			"Throwing"
+		],
+		"adventure skills": [],
+		"appearance": {
+			"ears": ["R"],
+			"skin": [5,6,8,9]
+		}
+	},
+	"Lich": {
+		"description": "When a powerful magus grows near death, their desire to live on makes them attempt lichdom. Of the many who try every century, barely a handful succeed. Most fail and die, but some partially make it, though the process robs them of much of their memories and skills. Their young 'age' is their new 'life' beginning anew, but they are patient. After all, they have all the time in the world now.",
+		"combat skills": [
+			"Martial Arts"
+		],
+		"adventure skills": [
+			"Gene Engineer",
+			"Meditation",
+			"Casting",
+			"Magic Device"
+		],
+		"appearance": {
+			"ears": ["R", "E"],
+			"skin": [0,1,2,8,9]
+		}
+	},
+}

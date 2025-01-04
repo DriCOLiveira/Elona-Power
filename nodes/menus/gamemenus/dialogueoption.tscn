@@ -1,0 +1,18 @@
+[gd_scene load_steps=3 format=3 uid="uid://bf85ujbxoaq5e"]
+
+[ext_resource type="FontFile" uid="uid://bbwe76sp3lqcn" path="res://GNU Unifont.ttf" id="1_fhjit"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_5jhal"]
+size = Vector2(576, 16)
+
+[node name="dialogueoption" type="Label"]
+custom_minimum_size = Vector2(576, 16)
+offset_right = 88.0
+offset_bottom = 16.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("1_fhjit")
+text = "I want to buy something."
+
+[node name="touch" type="TouchScreenButton" parent="."]
+position = Vector2(288, 8)
+shape = SubResource("RectangleShape2D_5jhal")
