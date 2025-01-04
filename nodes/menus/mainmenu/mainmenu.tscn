@@ -1,10 +1,9 @@
-[gd_scene load_steps=12 format=3 uid="uid://cudhpp32lwtsp"]
+[gd_scene load_steps=11 format=3 uid="uid://cudhpp32lwtsp"]
 
 [ext_resource type="Texture2D" uid="uid://bxlvqa4v4an78" path="res://graphic/title.bmp" id="1_0x85k"]
 [ext_resource type="Script" path="res://nodes/menus/mainmenu/mainmenu.gd" id="1_3yoks"]
 [ext_resource type="Texture2D" uid="uid://c1gvcvm06fhja" path="res://graphic/interface_1.png" id="2_5rq3v"]
 [ext_resource type="StyleBox" uid="uid://cojxkdqeh32hw" path="res://nodes/menus/mainmenu/new_style_box_flat.tres" id="4_r43sw"]
-[ext_resource type="FontFile" uid="uid://bbwe76sp3lqcn" path="res://GNU Unifont.ttf" id="4_tlmgm"]
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_00tbm"]
 
@@ -78,7 +77,6 @@ theme_override_colors/font_selected_color = Color(0, 0, 0, 1)
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_colors/font_hovered_color = Color(0, 0, 0, 1)
 theme_override_constants/v_separation = 18
-theme_override_fonts/font = ExtResource("4_tlmgm")
 theme_override_font_sizes/font_size = 16
 theme_override_styles/focus = SubResource("StyleBoxEmpty_00tbm")
 theme_override_styles/panel = SubResource("StyleBoxEmpty_83bsq")
@@ -121,18 +119,21 @@ offset_right = 328.0
 offset_bottom = 252.0
 
 [node name="HSeparator2" type="HSeparator" parent="MM"]
+layout_mode = 0
 offset_left = 152.0
 offset_top = 283.0
 offset_right = 333.0
 offset_bottom = 287.0
 
 [node name="HSeparator3" type="HSeparator" parent="MM"]
+layout_mode = 0
 offset_left = 141.0
 offset_top = 316.0
 offset_right = 322.0
 offset_bottom = 320.0
 
 [node name="HSeparator4" type="HSeparator" parent="MM"]
+layout_mode = 0
 offset_left = 132.0
 offset_top = 352.0
 offset_right = 313.0
@@ -144,7 +145,6 @@ offset_left = 148.0
 offset_top = 150.0
 offset_right = 284.0
 offset_bottom = 174.0
-theme_override_fonts/font = ExtResource("4_tlmgm")
 theme_override_font_sizes/font_size = 16
 theme_override_styles/normal = SubResource("StyleBoxFlat_fhgla")
 text = "Starting Menu"
@@ -156,7 +156,6 @@ offset_left = 24.0
 offset_top = 24.0
 offset_right = 64.0
 offset_bottom = 47.0
-theme_override_fonts/font = ExtResource("4_tlmgm")
 theme_override_font_sizes/font_size = 16
 text = "Elona                                           
 ElonaPlus (Elona+)
@@ -167,7 +166,6 @@ layout_mode = 0
 offset_left = 200.0
 offset_right = 425.0
 offset_bottom = 63.0
-theme_override_fonts/font = ExtResource("4_tlmgm")
 theme_override_font_sizes/font_size = 16
 text = "Developed by Noa
 Developed by Ano

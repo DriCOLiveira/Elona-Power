@@ -237,6 +237,19 @@ func _process(_delta: float) -> void:
 		elif Input.is_action_pressed("right"):
 			player.move(Vector2(1,0))
 			autonomy_for_all()
+		# Diagonal movement
+		elif Input.is_action_pressed("up_left"):
+			player.move(Vector2(-1,-1))
+			autonomy_for_all()
+		elif Input.is_action_pressed("up_right"):
+			player.move(Vector2(1,-1))
+			autonomy_for_all()
+		elif Input.is_action_pressed("down_left"):
+			player.move(Vector2(-1,1))
+			autonomy_for_all()
+		elif Input.is_action_pressed("down_right"):
+			player.move(Vector2(1,1))
+			autonomy_for_all()
 	pass
 	
 func set_camera_limits():

@@ -77,6 +77,31 @@ func move(dir):
 				$hair.animation = "WALK_LEFT"
 				$chest.animation = "WALK_LEFT"
 				$leg.animation = "WALK_LEFT"
+			# Diagonal movement
+			Vector2(1,1):
+				$body.animation = "WALK_DOWN"
+				$eyebase.animation = "WALK_DOWN"
+				$hair.animation = "WALK_DOWN"
+				$chest.animation = "WALK_DOWN"
+				$leg.animation = "WALK_DOWN"
+			Vector2(-1,1):
+				$body.animation = "WALK_DOWN"
+				$eyebase.animation = "WALK_DOWN"
+				$hair.animation = "WALK_DOWN"
+				$chest.animation = "WALK_DOWN"
+				$leg.animation = "WALK_DOWN"
+			Vector2(1,-1):
+				$body.animation = "WALK_UP"
+				$eyebase.animation = "WALK_UP"
+				$hair.animation = "WALK_UP"
+				$chest.animation = "WALK_UP"
+				$leg.animation = "WALK_UP"
+			Vector2(-1,-1):
+				$body.animation = "WALK_UP"
+				$eyebase.animation = "WALK_UP"
+				$hair.animation = "WALK_UP"
+				$chest.animation = "WALK_UP"
+				$leg.animation = "WALK_UP"
 					
 		if result.collider is NPC:
 			print(result.collider.name)
@@ -155,7 +180,75 @@ func move(dir):
 					$hair.animation = "WALK_LEFT"
 					$chest.animation = "WALK_LEFT"
 					$leg.animation = "WALK_LEFT"
+			# Diagonal movement
+			Vector2(1,1):
+				if $body.animation == "WALK_DOWN":
+					var v = $body.frame + 1
+					if v > 3:
+						v = 0
+					$body.frame = v
+					$eyebase.frame = v
+					$hair.frame = v
+					$chest.frame = v
+					$leg.frame = v
 					
+				else:
+					$body.animation = "WALK_DOWN"
+					$eyebase.animation = "WALK_DOWN"
+					$hair.animation = "WALK_DOWN"
+					$chest.animation = "WALK_DOWN"
+					$leg.animation = "WALK_DOWN"
+			Vector2(-1,1):
+				if $body.animation == "WALK_DOWN":
+					var v = $body.frame + 1
+					if v > 3:
+						v = 0
+					$body.frame = v
+					$eyebase.frame = v
+					$hair.frame = v
+					$chest.frame = v
+					$leg.frame = v
+					
+				else:
+					$body.animation = "WALK_DOWN"
+					$eyebase.animation = "WALK_DOWN"
+					$hair.animation = "WALK_DOWN"
+					$chest.animation = "WALK_DOWN"
+					$leg.animation = "WALK_DOWN"
+			Vector2(1,-1):
+				if $body.animation == "WALK_UP":
+					var v = $body.frame + 1
+					if v > 3:
+						v = 0
+					$body.frame = v
+					$eyebase.frame = v
+					$hair.frame = v
+					$chest.frame = v
+					$leg.frame = v
+					
+				else:
+					$body.animation = "WALK_UP"
+					$eyebase.animation = "WALK_UP"
+					$hair.animation = "WALK_UP"
+					$chest.animation = "WALK_UP"
+					$leg.animation = "WALK_UP"
+			Vector2(-1,-1):
+				if $body.animation == "WALK_UP":
+					var v = $body.frame + 1
+					if v > 3:
+						v = 0
+					$body.frame = v
+					$eyebase.frame = v
+					$hair.frame = v
+					$chest.frame = v
+					$leg.frame = v
+					
+				else:
+					$body.animation = "WALK_UP"
+					$eyebase.animation = "WALK_UP"
+					$hair.animation = "WALK_UP"
+					$chest.animation = "WALK_UP"
+					$leg.animation = "WALK_UP"
 		position = target
 		
 func eat_item(data):
